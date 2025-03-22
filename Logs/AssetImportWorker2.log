@@ -15,7 +15,7 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-53713
+53866
 -job-worker-count
 9
 -background-job-worker-count
@@ -59,14 +59,14 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22668]  Target information:
+Player connection [11720]  Target information:
 
-Player connection [22668]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2747092451 [EditorId] 2747092451 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11720]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 860628251 [EditorId] 860628251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [22668]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 2747092451 [EditorId] 2747092451 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11720]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 860628251 [EditorId] 860628251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [22668] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [22668] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11720] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [11720] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.41f1 (46e447368a18)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/Resources/UnitySubsystems
@@ -95,43 +95,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012869 seconds.
-- Loaded All Assemblies, in  1.312 seconds
+Registered in 0.013008 seconds.
+- Loaded All Assemblies, in  1.159 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.723 seconds
-Domain Reload Profiling: 2024ms
-	BeginReloadAssembly (712ms)
+- Finished resetting the current domain, in  0.737 seconds
+Domain Reload Profiling: 1884ms
+	BeginReloadAssembly (542ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (85ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (87ms)
 	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (128ms)
-	LoadAllAssembliesAndSetupDomain (349ms)
-		LoadAssemblies (699ms)
+	initialDomainReloadingComplete (129ms)
+	LoadAllAssembliesAndSetupDomain (362ms)
+		LoadAssemblies (525ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (343ms)
-			TypeCache.Refresh (340ms)
-				TypeCache.ScanAssembly (313ms)
+		AnalyzeDomain (355ms)
+			TypeCache.Refresh (353ms)
+				TypeCache.ScanAssembly (325ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (724ms)
+	FinalizeReload (738ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (616ms)
+		SetupLoadedEditorAssemblies (628ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (60ms)
+			InitializePlatformSupportModulesInManaged (58ms)
 			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (112ms)
-			ProcessInitializeOnLoadAttributes (307ms)
-			ProcessInitializeOnLoadMethodAttributes (129ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (309ms)
+			ProcessInitializeOnLoadMethodAttributes (131ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,223 +140,53 @@ Domain Reload Profiling: 2024ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.903 seconds
-Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.886 seconds
+Refreshing native plugins compatible for Editor in 3.20 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.837 seconds
-Domain Reload Profiling: 3712ms
-	BeginReloadAssembly (434ms)
+- Finished resetting the current domain, in  1.563 seconds
+Domain Reload Profiling: 3425ms
+	BeginReloadAssembly (410ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
+		CreateAndSetChildDomain (51ms)
 	RebuildCommonClasses (89ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (115ms)
-	LoadAllAssembliesAndSetupDomain (1210ms)
-		LoadAssemblies (920ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (104ms)
+	LoadAllAssembliesAndSetupDomain (1230ms)
+		LoadAssemblies (945ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (542ms)
-			TypeCache.Refresh (402ms)
-				TypeCache.ScanAssembly (372ms)
-			BuildScriptInfoCaches (107ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (1838ms)
+		AnalyzeDomain (548ms)
+			TypeCache.Refresh (410ms)
+				TypeCache.ScanAssembly (379ms)
+			BuildScriptInfoCaches (108ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1564ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1449ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (310ms)
-			ProcessInitializeOnLoadAttributes (874ms)
-			ProcessInitializeOnLoadMethodAttributes (218ms)
-			AfterProcessingInitializeOnLoad (30ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 198 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5948 unused Assets / (4.0 MB). Loaded Objects now: 6634.
-Memory consumption went from 157.3 MB to 153.3 MB.
-Total: 12.524800 ms (FindLiveObjects: 1.060900 ms CreateObjectMapping: 0.753200 ms MarkObjects: 7.551200 ms  DeleteObjects: 3.157600 ms)
-
-========================================================================
-Received Prepare
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5936 unused Assets / (3.9 MB). Loaded Objects now: 6633.
-Memory consumption went from 126.7 MB to 122.8 MB.
-Total: 12.166900 ms (FindLiveObjects: 0.982400 ms CreateObjectMapping: 0.741100 ms MarkObjects: 7.540600 ms  DeleteObjects: 2.901200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 257239.307690 seconds.
-  path: Assets/Scripts/BowSway.cs
-  artifactKey: Guid(675d0e9f6f225814781bd44f025a2900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/BowSway.cs using Guid(675d0e9f6f225814781bd44f025a2900) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3e07a1ccfb42ec796ea0695a06aeb96') in 0.007923 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5935 unused Assets / (3.5 MB). Loaded Objects now: 6634.
-Memory consumption went from 127.3 MB to 123.8 MB.
-Total: 13.863000 ms (FindLiveObjects: 1.111000 ms CreateObjectMapping: 0.852800 ms MarkObjects: 8.496300 ms  DeleteObjects: 3.401200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.687284 seconds.
-  path: Assets/Scripts/PlayerShoot.cs
-  artifactKey: Guid(ebc9785ec2e8e2444b12c77339cc1e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerShoot.cs using Guid(ebc9785ec2e8e2444b12c77339cc1e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75789580fb9d50d5746652ac0e7c8c94') in 0.0018021 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5934 unused Assets / (3.9 MB). Loaded Objects now: 6633.
-Memory consumption went from 127.3 MB to 123.3 MB.
-Total: 14.081200 ms (FindLiveObjects: 1.114700 ms CreateObjectMapping: 0.963000 ms MarkObjects: 8.518700 ms  DeleteObjects: 3.482500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.710627 seconds.
-  path: Assets/Scripts/Weapon.cs
-  artifactKey: Guid(cd4ab9fded1029b47a69cfa8aa5ebf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Weapon.cs using Guid(cd4ab9fded1029b47a69cfa8aa5ebf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2428497d75d36afbd610e1685014f096') in 0.0013324 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5933 unused Assets / (3.9 MB). Loaded Objects now: 6632.
-Memory consumption went from 127.3 MB to 123.3 MB.
-Total: 14.674800 ms (FindLiveObjects: 1.229200 ms CreateObjectMapping: 0.913900 ms MarkObjects: 9.078800 ms  DeleteObjects: 3.450900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.795 seconds
-Refreshing native plugins compatible for Editor in 3.11 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.690 seconds
-Domain Reload Profiling: 3466ms
-	BeginReloadAssembly (487ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (18ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (86ms)
-	RebuildCommonClasses (86ms)
-	RebuildNativeTypeToScriptingClass (27ms)
-	initialDomainReloadingComplete (78ms)
-	LoadAllAssembliesAndSetupDomain (1097ms)
-		LoadAssemblies (949ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (422ms)
-			TypeCache.Refresh (18ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (373ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1691ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1194ms)
+		SetupLoadedEditorAssemblies (1220ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (294ms)
-			ProcessInitializeOnLoadAttributes (721ms)
-			ProcessInitializeOnLoadMethodAttributes (139ms)
-			AfterProcessingInitializeOnLoad (25ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (261ms)
+			ProcessInitializeOnLoadAttributes (745ms)
+			ProcessInitializeOnLoadMethodAttributes (172ms)
+			AfterProcessingInitializeOnLoad (28ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (38ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.63 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5940 unused Assets / (4.6 MB). Loaded Objects now: 6647.
-Memory consumption went from 141.4 MB to 136.8 MB.
-Total: 14.381400 ms (FindLiveObjects: 0.980600 ms CreateObjectMapping: 0.746700 ms MarkObjects: 8.666900 ms  DeleteObjects: 3.985600 ms)
+Unloading 198 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5944 unused Assets / (4.0 MB). Loaded Objects now: 6630.
+Memory consumption went from 159.2 MB to 155.2 MB.
+Total: 14.179400 ms (FindLiveObjects: 1.103900 ms CreateObjectMapping: 0.872800 ms MarkObjects: 8.569800 ms  DeleteObjects: 3.630700 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 36.945599 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32f441a06b793d8c490d2bc69ceab6cc') in 0.0032988 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.962 seconds
-Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.853 seconds
-Domain Reload Profiling: 3793ms
-	BeginReloadAssembly (509ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (91ms)
-	RebuildCommonClasses (96ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (1213ms)
-		LoadAssemblies (1059ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (447ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (400ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (1854ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1363ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (308ms)
-			ProcessInitializeOnLoadAttributes (844ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (30ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (50ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.67 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5940 unused Assets / (3.9 MB). Loaded Objects now: 6649.
-Memory consumption went from 139.7 MB to 135.8 MB.
-Total: 15.088000 ms (FindLiveObjects: 1.137200 ms CreateObjectMapping: 0.903300 ms MarkObjects: 9.170300 ms  DeleteObjects: 3.874900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
