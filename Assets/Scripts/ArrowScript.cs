@@ -14,15 +14,11 @@ public class ArrowScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (stuck) return;
-
         StickArrow();
     }
 
     private void OnTriggerEnter(Collider col)
     {
-        if (stuck) return;
-
         StickArrow();
     }
 
@@ -40,12 +36,12 @@ public class ArrowScript : MonoBehaviour
         {
             RaycastHit hit;
             Vector3 nextPosition = transform.position + rb.linearVelocity * Time.fixedDeltaTime;
-
+            /*
             if (Physics.Linecast(transform.position, nextPosition, out hit))
             {
                 transform.position = hit.point;
                 StickArrow();
-            }
+            }*/
         }
     }
 }
