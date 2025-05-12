@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.015
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -463,6 +463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bow
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 022a72268e462114788abcf0c0b07418, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 022a72268e462114788abcf0c0b07418, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.060153864
@@ -798,7 +802,7 @@ Transform:
   m_GameObject: {fileID: 558735926}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 118, y: 4, z: 75}
+  m_LocalPosition: {x: 201.4, y: 4, z: 195.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1185,11 +1189,11 @@ PrefabInstance:
       objectReference: {fileID: 4723854781746245423, guid: 3c3159d397f9c3c42a8a8c6e51fe0d8c, type: 3}
     - target: {fileID: 6207037786605290772, guid: 9ad9ad84bc1d0b44a83fc127b98dcf7f, type: 3}
       propertyPath: spreadInterval
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6922646055593357841, guid: 9ad9ad84bc1d0b44a83fc127b98dcf7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 117.665
+      value: 110.9
       objectReference: {fileID: 0}
     - target: {fileID: 6922646055593357841, guid: 9ad9ad84bc1d0b44a83fc127b98dcf7f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1246,7 +1250,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3959923422810438458, guid: 5e2fc47d0af516145b07518df4adcb60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 117.26101
+      value: 200.66101
       objectReference: {fileID: 0}
     - target: {fileID: 3959923422810438458, guid: 5e2fc47d0af516145b07518df4adcb60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1254,7 +1258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3959923422810438458, guid: 5e2fc47d0af516145b07518df4adcb60, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 79.561584
+      value: 199.86159
       objectReference: {fileID: 0}
     - target: {fileID: 3959923422810438458, guid: 5e2fc47d0af516145b07518df4adcb60, type: 3}
       propertyPath: m_LocalRotation.w
