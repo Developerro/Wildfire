@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
 
+    public GameObject rightArm;
+    public GameObject leftArm;
+
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
@@ -24,6 +27,9 @@ public class Player : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if (leftArm != null)
+            leftArm.SetActive(false);
     }
 
     void Update()
@@ -56,7 +62,6 @@ public class Player : MonoBehaviour
             characterController.height = crouchHeight;
             walkSpeed = crouchSpeed;
             runSpeed = crouchSpeed;
-
         }
         else
         {
@@ -73,6 +78,17 @@ public class Player : MonoBehaviour
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            if (rightArm != null) rightArm.SetActive(false);
+            if (leftArm != null) leftArm.SetActive(true);
+        }
+        else
+        {
+            if (rightArm != null) rightArm.SetActive(true);
+            if (leftArm != null) leftArm.SetActive(false);
         }
     }
 }
