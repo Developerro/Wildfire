@@ -62,8 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ArrowScript.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FireArea.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Tree.cs" />
     <Compile Include="Assets\Scripts\GrassManager.cs" />
     <Compile Include="Assets\Scripts\FireScript.cs" />
     <Compile Include="Assets\Scripts\BowScript.cs" />

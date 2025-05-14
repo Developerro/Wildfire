@@ -1,6 +1,15 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+
+public class Health : MonoBehaviour
+{
+    public float health = 100f;
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+    }
+}
+public class Player : Health
 {
     public Camera playerCamera;
     public float walkSpeed = 6f;
@@ -11,7 +20,7 @@ public class Player : MonoBehaviour
     public float lookXLimit = 45f;
     public float defaultHeight = 2f;
     public float crouchHeight = 1f;
-    public float crouchSpeed = 3f;
+    public float crouchSpeed = 3f; 
 
     public GameObject rightArm;
     public GameObject leftArm;
