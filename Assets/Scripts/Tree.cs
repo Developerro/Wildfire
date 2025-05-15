@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class Tree : MonoBehaviour
+public class Tree : Health
 {
     public GameObject normalModel;
     public GameObject burntModel;
-    public float health = 100f;
 
     private bool isBurnt = false;
 
@@ -14,7 +13,7 @@ public class Tree : MonoBehaviour
         {
             BurnTree();
         }           
-        if (isBurnt && health == 100f)
+        if (isBurnt && health >= 100f)
         {
             ReviveTree();
         }
