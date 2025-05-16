@@ -51,6 +51,7 @@ MonoBehaviour:
   health: 100
   normalModel: {fileID: 4794586141200779074}
   burntModel: {fileID: 2293984162128403655}
+  fireArea: {fileID: 6207037786605290772, guid: 9ad9ad84bc1d0b44a83fc127b98dcf7f, type: 3}
 --- !u!65 &470098773273173141
 BoxCollider:
   m_ObjectHideFlags: 0

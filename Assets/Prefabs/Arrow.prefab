@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd64aba96f19f8048b3c546b95eee60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 20
+  arrowPrefab: {fileID: 1467646578325964756}
 --- !u!65 &5876574304394551063
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class ArrowScript : MonoBehaviour
 {
-    public int damage;
+    public int damage = 20;
+    public GameObject arrowPrefab;
+
     private Rigidbody rb;
     private bool stuck = false;
     private Vector3 lastPosition;
@@ -10,7 +12,16 @@ public class ArrowScript : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         lastPosition = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        if (!stuck)
+        {
+            CheckRaycastHit();
+        }
     }
 
     private void Update()
@@ -18,7 +29,6 @@ public class ArrowScript : MonoBehaviour
         if (!stuck)
         {
             RotateArrow();
-            CheckForCollision();
         }
     }
 
@@ -27,12 +37,11 @@ public class ArrowScript : MonoBehaviour
         if (rb.linearVelocity.sqrMagnitude > 0.1f)
         {
             Quaternion lookRotation = Quaternion.LookRotation(-rb.linearVelocity);
-            transform.rotation = lookRotation * Quaternion.Euler(90, 0, 0); 
+            transform.rotation = lookRotation * Quaternion.Euler(90, 0, 0);
         }
     }
 
-
-    private void CheckForCollision()
+    private void CheckRaycastHit()
     {
         Vector3 currentPosition = transform.position;
         Vector3 movement = currentPosition - lastPosition;
@@ -40,31 +49,49 @@ public class ArrowScript : MonoBehaviour
 
         if (distance > 0f)
         {
-            if (Physics.Linecast(lastPosition, currentPosition, out RaycastHit hit))
+            RaycastHit hit;
+            if (Physics.Raycast(lastPosition, movement.normalized, out hit, distance))
             {
-                transform.position = hit.point;
-                StickArrow(hit.collider);
+                if (!hit.collider.isTrigger)
+                {
+                    transform.position = hit.point;
+                    StickArrow(hit.collider, hit.point, transform.rotation);
+                }
             }
         }
 
         lastPosition = currentPosition;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void StickArrow(Collider hitCollider, Vector3 hitPosition, Quaternion hitRotation)
     {
-        if (!stuck)
-        {
-            StickArrow(collision.collider);
-        }
-    }
-
-    private void StickArrow(Collider hitCollider)
-    {
+        if (stuck) return;
         stuck = true;
 
         rb.isKinematic = true;
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-        transform.SetParent(hitCollider.transform);
+
+        if (arrowPrefab != null)
+        {
+            GameObject stuckArrow = Instantiate(arrowPrefab, hitPosition, hitRotation);
+            stuckArrow.transform.SetParent(hitCollider.transform, worldPositionStays: true);
+
+            Destroy(stuckArrow.GetComponent<ArrowScript>());
+            Rigidbody cloneRb = stuckArrow.GetComponent<Rigidbody>();
+            if (cloneRb != null)
+                Destroy(cloneRb);
+        }
+
+        gameObject.SetActive(false);
+
+        if (hitCollider.CompareTag("Enemy"))
+        {
+            Enemy enemy = hitCollider.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+        }
     }
 }

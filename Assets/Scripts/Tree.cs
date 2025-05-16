@@ -4,15 +4,21 @@ public class Tree : Health
 {
     public GameObject normalModel;
     public GameObject burntModel;
+    public FireArea fireArea;
 
     private bool isBurnt = false;
 
-    public void Update()
+    void Update()
     {
-        if (health <= 0f)
+        if (health <= 0f && !isBurnt)
         {
+            if (fireArea != null)
+            {
+                Instantiate(fireArea, transform.position, Quaternion.identity);
+            }
             BurnTree();
-        }           
+        }
+
         if (isBurnt && health >= 100f)
         {
             ReviveTree();
@@ -33,5 +39,10 @@ public class Tree : Health
 
         if (normalModel != null) normalModel.SetActive(true);
         if (burntModel != null) burntModel.SetActive(false);
+    }
+
+    public bool IsBurnt()
+    {
+        return isBurnt;
     }
 }

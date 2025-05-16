@@ -67,12 +67,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePrefab: {fileID: 4723854781746245423, guid: d1aeba774f09a994a8c751516a5be7cc, type: 3}
-  bigFirePrefab: {fileID: 0}
-  spreadInterval: 1
+  bigFirePrefab: {fileID: 4723854781746245423, guid: 3c3159d397f9c3c42a8a8c6e51fe0d8c, type: 3}
+  spreadInterval: 4
   spreadRadius: 3
-  fireLifetime: 5
+  fireLifetime: 13
   fusionRadius: 2.5
-  fusionThreshold: 6
+  fusionThreshold: 5
   terrain: {fileID: 0}
   burnRadius: 2
   detailLayer: 0
