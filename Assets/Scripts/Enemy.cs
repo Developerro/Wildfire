@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Linq;
+using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,29 +9,44 @@ public class Enemy : MonoBehaviour
     public float attackDistance = 5f;
     public GameObject flameObject;
     public float health = 100f;
+    public float enemySpeed = 4f;
+    public Animator animator;
 
     private NavMeshAgent agent;
+    private Rigidbody rb;
     private Tree currentTarget;
     private bool lockedOnPlayer = false;
+    private bool isDead = false;
+
+    private Renderer rend;
+    private Color originalColor;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        if (flameObject != null)
-            flameObject.SetActive(false);
+        rb = GetComponent<Rigidbody>();
+        rend = GetComponentInChildren<Renderer>();
+        if (rend != null)
+            originalColor = rend.material.color;
+
+        agent.speed = enemySpeed;
+        flameObject?.SetActive(false);
+        rb.isKinematic = true;
     }
 
     void Update()
     {
+        if (isDead) return;
+
         if (lockedOnPlayer)
-        {
             AttackPlayer();
-        }
         else
         {
             FindNearestTree();
             AttackTree();
         }
+
+        Debug.DrawRay(transform.position + Vector3.up * 0.5f, Vector3.down * 2f, Color.red);
     }
 
     void FindNearestTree()
@@ -73,9 +89,7 @@ public class Enemy : MonoBehaviour
         }
 
         if (currentTarget.IsBurnt())
-        {
             currentTarget = null;
-        }
     }
 
     void AttackPlayer()
@@ -112,21 +126,77 @@ public class Enemy : MonoBehaviour
 
     void SetFlameActive(bool active)
     {
-        if (flameObject == null) return;
-
-        if (flameObject.activeSelf != active)
+        animator?.SetBool("isAttacking", active);
+        if (flameObject != null && flameObject.activeSelf != active)
             flameObject.SetActive(active);
     }
 
     public void TakeDamage(float damage)
     {
+        if (isDead) return;
+
         health -= damage;
+        animator?.SetTrigger("Hit");
+
+        StartCoroutine(HurtFlash());
+
         if (health <= 0f)
+            Die();
+        else
         {
-            Destroy(gameObject);
+            lockedOnPlayer = true;
+            currentTarget = null;
+        }
+    }
+
+    IEnumerator HurtFlash()
+    {
+        if (rend == null) yield break;
+
+        rend.material.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        rend.material.color = originalColor;
+    }
+
+    void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        if (agent != null)
+        {
+            agent.ResetPath();
+            agent.enabled = false;
         }
 
-        lockedOnPlayer = true;
-        currentTarget = null;
+        SetFlameActive(false);
+        animator?.SetBool("isAttacking", false);
+        animator?.SetTrigger("Die");
+
+        StartCoroutine(EnablePhysicsWithDelay());
+
+        Destroy(gameObject, 3f);
+    }
+
+    IEnumerator EnablePhysicsWithDelay()
+    {
+        yield return new WaitForEndOfFrame();
+
+        transform.position += Vector3.up * 0.01f;
+
+        rb.isKinematic = false;
+        rb.constraints = RigidbodyConstraints.None;
+        rb.useGravity = true;
+
+        Vector3 knockbackDir = (-transform.forward + Vector3.up * 0.1f).normalized;
+        rb.AddForce(knockbackDir * 5f, ForceMode.Impulse);
+
+        yield return new WaitForSeconds(0.3f);
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 3f))
+        {
+            float dist = hit.distance;
+            if (dist < 0.05f)
+                transform.position = hit.point + Vector3.up * 0.2f;
+        }
     }
 }
