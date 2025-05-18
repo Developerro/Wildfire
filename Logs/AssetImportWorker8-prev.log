@@ -15,7 +15,7 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
 -logFile
 Logs/AssetImportWorker8.log
 -srvPort
-62771
+64294
 -job-worker-count
 9
 -background-job-worker-count
@@ -59,14 +59,14 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8264]  Target information:
+Player connection [18552]  Target information:
 
-Player connection [8264]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1213592893 [EditorId] 1213592893 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18552]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4291357591 [EditorId] 4291357591 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8264]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 1213592893 [EditorId] 1213592893 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18552]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 4291357591 [EditorId] 4291357591 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8264] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8264] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18552] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18552] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.41f1 (46e447368a18)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/Resources/UnitySubsystems
@@ -95,43 +95,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012894 seconds.
-- Loaded All Assemblies, in  1.056 seconds
+Registered in 0.015895 seconds.
+- Loaded All Assemblies, in  1.092 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.776 seconds
-Domain Reload Profiling: 1819ms
-	BeginReloadAssembly (368ms)
+- Finished resetting the current domain, in  0.884 seconds
+Domain Reload Profiling: 1964ms
+	BeginReloadAssembly (385ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (108ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (141ms)
-	LoadAllAssembliesAndSetupDomain (396ms)
-		LoadAssemblies (352ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (146ms)
+	LoadAllAssembliesAndSetupDomain (429ms)
+		LoadAssemblies (370ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (387ms)
-			TypeCache.Refresh (384ms)
-				TypeCache.ScanAssembly (348ms)
+		AnalyzeDomain (420ms)
+			TypeCache.Refresh (417ms)
+				TypeCache.ScanAssembly (384ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (776ms)
+	FinalizeReload (885ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (666ms)
+		SetupLoadedEditorAssemblies (748ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (62ms)
+			InitializePlatformSupportModulesInManaged (69ms)
 			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (127ms)
-			ProcessInitializeOnLoadAttributes (336ms)
-			ProcessInitializeOnLoadMethodAttributes (132ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (380ms)
+			ProcessInitializeOnLoadMethodAttributes (156ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,7 +140,1121 @@ Domain Reload Profiling: 1819ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.150 seconds
+- Loaded All Assemblies, in  2.542 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.161 seconds
+Domain Reload Profiling: 4677ms
+	BeginReloadAssembly (500ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (97ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (117ms)
+	LoadAllAssembliesAndSetupDomain (1773ms)
+		LoadAssemblies (1224ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (865ms)
+			TypeCache.Refresh (639ms)
+				TypeCache.ScanAssembly (590ms)
+			BuildScriptInfoCaches (185ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (2162ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1655ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (356ms)
+			ProcessInitializeOnLoadAttributes (1017ms)
+			ProcessInitializeOnLoadMethodAttributes (241ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 454 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7655 unused Assets / (25.1 MB). Loaded Objects now: 8304.
+Memory consumption went from 238.5 MB to 213.4 MB.
+Total: 30.263700 ms (FindLiveObjects: 1.386700 ms CreateObjectMapping: 1.220700 ms MarkObjects: 10.647100 ms  DeleteObjects: 17.006600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 66121.593301 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat
+  artifactKey: Guid(9dfc825aed78fcd4ba02077103263b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat using Guid(9dfc825aed78fcd4ba02077103263b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dff4946db4963db54339e1db73482087') in 2.0355299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 329
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph
+  artifactKey: Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29a8e059976bd373a3ba8ba99f2799a6') in 10.5105773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.690657 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat
+  artifactKey: Guid(31d0dcc6f2dd4e4408d18036a2c93862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat using Guid(31d0dcc6f2dd4e4408d18036a2c93862) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '812307cd78c7b471d57f0cc83be9b578') in 0.0194848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.529790 seconds.
+  path: Packages/com.unity.visualeffectgraph/ShaderGraph/VFXDefault.shadergraph
+  artifactKey: Guid(9d119ea62212af645b58c51d9b0f8276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualeffectgraph/ShaderGraph/VFXDefault.shadergraph using Guid(9d119ea62212af645b58c51d9b0f8276) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bb0bad11cb97c51bd3acd2944bf8879') in 1.2141589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.072834 seconds.
+  path: Assets/Art/3D/Vegetation/SmallBush.fbx
+  artifactKey: Guid(3574140191faf9246be0f08c89e73498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D/Vegetation/SmallBush.fbx using Guid(3574140191faf9246be0f08c89e73498) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09512ce820a4d617af77d18b6b227d7b') in 0.5448321 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/ShaderGraph/Hair.shadergraph
+  artifactKey: Guid(384d88ff5b296a44b89f1fb2d4442c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/ShaderGraph/Hair.shadergraph using Guid(384d88ff5b296a44b89f1fb2d4442c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fc7af713518315467320aed692c3a59') in 0.0367452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076352 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/ShaderGraph/AutodeskInteractiveTransparent.ShaderGraph
+  artifactKey: Guid(ee2ce0be66f45d9449d71ba9b49c2acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/ShaderGraph/AutodeskInteractiveTransparent.ShaderGraph using Guid(ee2ce0be66f45d9449d71ba9b49c2acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '664b3c34ea62e02b0e89e1ddb30eb1a0') in 0.045017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Art/3D/Items/Target/Materials/ArcheryTarget_Roughness_compressed.mat
+  artifactKey: Guid(60c1f911f606fb449b1c70322646bf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D/Items/Target/Materials/ArcheryTarget_Roughness_compressed.mat using Guid(60c1f911f606fb449b1c70322646bf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86be016ebb98c3e7a6ec3cf9d1365257') in 0.0350907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
+  artifactKey: Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adde60d2d6f326fb7ca98afcc929ed39') in 0.04364 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Editor/Tools/Resources/ColorCheckerShader.shadergraph
+  artifactKey: Guid(57281877c54abf74f990563fcd006765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Editor/Tools/Resources/ColorCheckerShader.shadergraph using Guid(57281877c54abf74f990563fcd006765) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Shader error in 'Hidden/ColorCheckerShader': undeclared identifier 'GetInverseCurrentExposureMultiplier' at Packages/com.unity.render-pipelines.high-definition/Editor/Tools/Resources/ColorCheckerShader.shadergraph(16361) (on d3d11)
+
+Compiling Subshader: 2, Pass: Universal Forward, Vertex program with _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON DYNAMICLIGHTMAP_ON EVALUATE_SH_MIXED EVALUATE_SH_VERTEX FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING PROBE_VOLUMES_L1 PROBE_VOLUMES_L2 SHADER_API_GLES30 SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING USE_LEGACY_LIGHTMAPS _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHTS_VERTEX _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
+Shader warning in 'Hidden/ColorCheckerShader': implicit truncation of vector type at 3D/Wildfire/Library/PackageCache/com.unity.render-pipelines.high-definition@3b03b6dd41b5/Editor/Tools/Resources/ProceduralColorchecker.hlsl(45) (on d3d11)
+
+Compiling Subshader: 2, Pass: Universal Forward, Vertex program with _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON DYNAMICLIGHTMAP_ON EVALUATE_SH_MIXED EVALUATE_SH_VERTEX FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING PROBE_VOLUMES_L1 PROBE_VOLUMES_L2 SHADER_API_GLES30 SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING USE_LEGACY_LIGHTMAPS _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHTS_VERTEX _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
+Shader error in 'Hidden/ColorCheckerShader': undeclared identifier 'GetInverseCurrentExposureMultiplier' at Packages/com.unity.render-pipelines.high-definition/Editor/Tools/Resources/ColorCheckerShader.shadergraph(16361) (on d3d11)
+
+Compiling Subshader: 2, Pass: Universal Forward, Vertex program with _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON DYNAMICLIGHTMAP_ON EVALUATE_SH_MIXED EVALUATE_SH_VERTEX FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING PROBE_VOLUMES_L1 PROBE_VOLUMES_L2 SHADER_API_GLES30 SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING USE_LEGACY_LIGHTMAPS _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHTS_VERTEX _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
+Shader warning in 'Hidden/ColorCheckerShader': implicit truncation of vector type at 3D/Wildfire/Library/PackageCache/com.unity.render-pipelines.high-definition@3b03b6dd41b5/Editor/Tools/Resources/ProceduralColorchecker.hlsl(45) (on d3d11)
+
+Compiling Subshader: 2, Pass: Universal Forward, Vertex program with _FORWARD_PLUS _MAIN_LIGHT_SHADOWS
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON DYNAMICLIGHTMAP_ON EVALUATE_SH_MIXED EVALUATE_SH_VERTEX FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING PROBE_VOLUMES_L1 PROBE_VOLUMES_L2 SHADER_API_GLES30 SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING USE_LEGACY_LIGHTMAPS _ADDITIONAL_LIGHTS _ADDITIONAL_LIGHTS_VERTEX _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
+ -> (artifact id: 'ac369b86955eb33da62c88f355208bf4') in 0.9941172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/Compositor/ShaderGraphs/DefaultCompositionGraph.shadergraph
+  artifactKey: Guid(8d15d6f5e5a52744191f35449f64df30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/Compositor/ShaderGraphs/DefaultCompositionGraph.shadergraph using Guid(8d15d6f5e5a52744191f35449f64df30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bace42ac3e1c6c7e1b5ddc29281c9f73') in 0.0196681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Arnold/ArnoldStandardSurface.ShaderGraph
+  artifactKey: Guid(aefc63699cf4eff49a6bbb7c9ef5d160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Arnold/ArnoldStandardSurface.ShaderGraph using Guid(aefc63699cf4eff49a6bbb7c9ef5d160) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd5273901452ed1b5fc8881b6030ebc1') in 0.0418729 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
+  artifactKey: Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0432ee0907752345fad9539984a4f823') in 0.0192648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
+  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9c949eb652464299002f4ff04f9c6af') in 0.0320697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph
+  artifactKey: Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1624f24048626a42b82431526749eed5') in 0.0150889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/ShaderGraph/AutodeskInteractive.ShaderGraph
+  artifactKey: Guid(7252379db4c18b641b517f2c91bb57e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipelineResources/ShaderGraph/AutodeskInteractive.ShaderGraph using Guid(7252379db4c18b641b517f2c91bb57e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f00dcb804e55d3ea868b4d8957b6a291') in 0.0479058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph
+  artifactKey: Guid(80aa867ac363ac043847b06ad71604cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb781ab6b10288ace93cc08c4a70ae2d') in 11.2789328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.019 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.913 seconds
+Domain Reload Profiling: 3913ms
+	BeginReloadAssembly (601ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (54ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (135ms)
+	RebuildCommonClasses (89ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (1200ms)
+		LoadAssemblies (1030ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (466ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (416ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1914ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1382ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (305ms)
+			ProcessInitializeOnLoadAttributes (866ms)
+			ProcessInitializeOnLoadMethodAttributes (171ms)
+			AfterProcessingInitializeOnLoad (28ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (45ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 169 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7671 unused Assets / (22.3 MB). Loaded Objects now: 8394.
+Memory consumption went from 221.9 MB to 199.7 MB.
+Total: 18.523100 ms (FindLiveObjects: 1.287500 ms CreateObjectMapping: 0.987900 ms MarkObjects: 7.951300 ms  DeleteObjects: 8.294000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 254.954704 seconds.
+  path: Assets/Art/3D/Items/Arrow.fbx
+  artifactKey: Guid(2c45ee87b212fbb428ac4bf1b302b9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D/Items/Arrow.fbx using Guid(2c45ee87b212fbb428ac4bf1b302b9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71bec0367fa487faa06f43e42a0e84cf') in 1.7794443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 340
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Art/3D/Vegetation/CutTree.fbx
+  artifactKey: Guid(b0aa2bde0fe8b5e45b04cca891dde5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D/Vegetation/CutTree.fbx using Guid(b0aa2bde0fe8b5e45b04cca891dde5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '687c3ec4518a659e012390b84d4a84ac') in 0.1321937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Art/3D/Vegetation/Pine.fbx
+  artifactKey: Guid(60d4ae88de8dfc7418364c4112d19413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D/Vegetation/Pine.fbx using Guid(60d4ae88de8dfc7418364c4112d19413) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '822f70a4302855acffc80b0007ef164c') in 0.1285371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.004 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.18 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.948 seconds
+Domain Reload Profiling: 3934ms
+	BeginReloadAssembly (554ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (59ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (130ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (1241ms)
+		LoadAssemblies (997ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (502ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (453ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1949ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1441ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (324ms)
+			ProcessInitializeOnLoadAttributes (898ms)
+			ProcessInitializeOnLoadMethodAttributes (179ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (51ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7655 unused Assets / (21.8 MB). Loaded Objects now: 8416.
+Memory consumption went from 224.7 MB to 202.9 MB.
+Total: 20.633800 ms (FindLiveObjects: 1.574900 ms CreateObjectMapping: 1.462000 ms MarkObjects: 8.693700 ms  DeleteObjects: 8.900500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 605.888109 seconds.
+  path: Assets/Materials/Green.mat
+  artifactKey: Guid(731c5313e9f4105479349ebd3035297a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Green.mat using Guid(731c5313e9f4105479349ebd3035297a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c72bf1c2adacdb06056e57dcee5b1c4') in 1.7422013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 330
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.266 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.86 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.995 seconds
+Domain Reload Profiling: 4237ms
+	BeginReloadAssembly (589ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (55ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (127ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1432ms)
+		LoadAssemblies (1165ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (564ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (508ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (1996ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1448ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (347ms)
+			ProcessInitializeOnLoadAttributes (883ms)
+			ProcessInitializeOnLoadMethodAttributes (177ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (49ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7655 unused Assets / (22.2 MB). Loaded Objects now: 8438.
+Memory consumption went from 228.9 MB to 206.7 MB.
+Total: 24.522700 ms (FindLiveObjects: 1.335300 ms CreateObjectMapping: 1.008400 ms MarkObjects: 11.174200 ms  DeleteObjects: 11.002600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.962 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.18 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.794 seconds
+Domain Reload Profiling: 3737ms
+	BeginReloadAssembly (535ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (102ms)
+	RebuildCommonClasses (88ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (1216ms)
+		LoadAssemblies (1020ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (490ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (443ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1795ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1318ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (287ms)
+			ProcessInitializeOnLoadAttributes (823ms)
+			ProcessInitializeOnLoadMethodAttributes (166ms)
+			AfterProcessingInitializeOnLoad (30ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (22.0 MB). Loaded Objects now: 8440.
+Memory consumption went from 228.7 MB to 206.6 MB.
+Total: 19.807700 ms (FindLiveObjects: 1.386100 ms CreateObjectMapping: 1.013500 ms MarkObjects: 8.483700 ms  DeleteObjects: 8.922500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.184 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.809 seconds
+Domain Reload Profiling: 3968ms
+	BeginReloadAssembly (536ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (102ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1400ms)
+		LoadAssemblies (1150ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (548ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (496ms)
+			ResolveRequiredComponents (30ms)
+	FinalizeReload (1810ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1318ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (284ms)
+			ProcessInitializeOnLoadAttributes (830ms)
+			ProcessInitializeOnLoadMethodAttributes (165ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.9 MB). Loaded Objects now: 8442.
+Memory consumption went from 228.7 MB to 206.7 MB.
+Total: 20.688400 ms (FindLiveObjects: 1.564400 ms CreateObjectMapping: 1.123700 ms MarkObjects: 9.446000 ms  DeleteObjects: 8.552200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.205 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.934 seconds
+Domain Reload Profiling: 4116ms
+	BeginReloadAssembly (540ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (103ms)
+	RebuildCommonClasses (103ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (1415ms)
+		LoadAssemblies (1152ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (568ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (510ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1935ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1386ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (342ms)
+			ProcessInitializeOnLoadAttributes (829ms)
+			ProcessInitializeOnLoadMethodAttributes (171ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.6 MB). Loaded Objects now: 8444.
+Memory consumption went from 228.7 MB to 207.0 MB.
+Total: 20.275600 ms (FindLiveObjects: 1.376700 ms CreateObjectMapping: 0.992300 ms MarkObjects: 8.126800 ms  DeleteObjects: 9.777800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.174 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.77 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.863 seconds
+Domain Reload Profiling: 4015ms
+	BeginReloadAssembly (530ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (101ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (1407ms)
+		LoadAssemblies (1151ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (554ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (499ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1864ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1351ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (289ms)
+			ProcessInitializeOnLoadAttributes (855ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (54ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.9 MB). Loaded Objects now: 8446.
+Memory consumption went from 228.7 MB to 206.8 MB.
+Total: 22.027200 ms (FindLiveObjects: 1.367600 ms CreateObjectMapping: 1.334500 ms MarkObjects: 10.438300 ms  DeleteObjects: 8.884800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.047 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.02 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.797 seconds
+Domain Reload Profiling: 3820ms
+	BeginReloadAssembly (521ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (97ms)
+	RebuildCommonClasses (98ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1277ms)
+		LoadAssemblies (1090ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (482ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (435ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1798ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1329ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (288ms)
+			ProcessInitializeOnLoadAttributes (837ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (22.7 MB). Loaded Objects now: 8448.
+Memory consumption went from 228.7 MB to 206.0 MB.
+Total: 23.568200 ms (FindLiveObjects: 1.551900 ms CreateObjectMapping: 1.539100 ms MarkObjects: 10.689300 ms  DeleteObjects: 9.785800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.157 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.996 seconds
+Domain Reload Profiling: 4130ms
+	BeginReloadAssembly (524ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (96ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1389ms)
+		LoadAssemblies (1123ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (560ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (504ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1997ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1441ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (343ms)
+			ProcessInitializeOnLoadAttributes (879ms)
+			ProcessInitializeOnLoadMethodAttributes (171ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (52ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.8 MB). Loaded Objects now: 8450.
+Memory consumption went from 228.7 MB to 206.9 MB.
+Total: 21.362500 ms (FindLiveObjects: 1.276300 ms CreateObjectMapping: 1.674200 ms MarkObjects: 8.957300 ms  DeleteObjects: 9.452600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.192 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.12 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.799 seconds
+Domain Reload Profiling: 3968ms
+	BeginReloadAssembly (536ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (98ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1418ms)
+		LoadAssemblies (1154ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (571ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (516ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1312ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (286ms)
+			ProcessInitializeOnLoadAttributes (822ms)
+			ProcessInitializeOnLoadMethodAttributes (166ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (51ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (22.0 MB). Loaded Objects now: 8452.
+Memory consumption went from 228.7 MB to 206.6 MB.
+Total: 21.617300 ms (FindLiveObjects: 1.376300 ms CreateObjectMapping: 1.053800 ms MarkObjects: 10.113300 ms  DeleteObjects: 9.071500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1655.450675 seconds.
+  path: Assets/Art/3D/Characters/LeftArm.prefab
+  artifactKey: Guid(2a9d1e00ac042274ea6ae2a7a9cb849d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/3D/Characters/LeftArm.prefab using Guid(2a9d1e00ac042274ea6ae2a7a9cb849d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '751d2c8a19d097d89b2c706bd0bd179b') in 0.0561032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.194 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.856 seconds
+Domain Reload Profiling: 4028ms
+	BeginReloadAssembly (530ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (101ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (40ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1416ms)
+		LoadAssemblies (1150ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (563ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (509ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1857ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1373ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (301ms)
+			ProcessInitializeOnLoadAttributes (853ms)
+			ProcessInitializeOnLoadMethodAttributes (182ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.7 MB). Loaded Objects now: 8454.
+Memory consumption went from 228.7 MB to 206.9 MB.
+Total: 20.180700 ms (FindLiveObjects: 1.549700 ms CreateObjectMapping: 1.099800 ms MarkObjects: 8.798300 ms  DeleteObjects: 8.730800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.017 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.823 seconds
+Domain Reload Profiling: 3816ms
+	BeginReloadAssembly (520ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (99ms)
+	RebuildCommonClasses (99ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1252ms)
+		LoadAssemblies (1071ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (474ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (421ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1824ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1341ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (291ms)
+			ProcessInitializeOnLoadAttributes (842ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (28ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (22.0 MB). Loaded Objects now: 8456.
+Memory consumption went from 228.7 MB to 206.7 MB.
+Total: 20.996000 ms (FindLiveObjects: 1.536400 ms CreateObjectMapping: 1.164300 ms MarkObjects: 9.000700 ms  DeleteObjects: 9.293000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.101 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.829 seconds
+Domain Reload Profiling: 3906ms
+	BeginReloadAssembly (526ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (97ms)
+	RebuildCommonClasses (109ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1316ms)
+		LoadAssemblies (1142ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (475ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (427ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1830ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1324ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (292ms)
+			ProcessInitializeOnLoadAttributes (828ms)
+			ProcessInitializeOnLoadMethodAttributes (165ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (51ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.5 MB). Loaded Objects now: 8458.
+Memory consumption went from 228.7 MB to 207.2 MB.
+Total: 21.872900 ms (FindLiveObjects: 1.774700 ms CreateObjectMapping: 1.566100 ms MarkObjects: 8.865200 ms  DeleteObjects: 9.664500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.925 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.16 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.824 seconds
+Domain Reload Profiling: 3730ms
+	BeginReloadAssembly (515ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (98ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (1206ms)
+		LoadAssemblies (1016ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (477ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (428ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1825ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1342ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (299ms)
+			ProcessInitializeOnLoadAttributes (840ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (49ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.8 MB). Loaded Objects now: 8460.
+Memory consumption went from 228.7 MB to 206.9 MB.
+Total: 18.764800 ms (FindLiveObjects: 1.286400 ms CreateObjectMapping: 1.023300 ms MarkObjects: 8.459000 ms  DeleteObjects: 7.994300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.331 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.65 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.017 seconds
+Domain Reload Profiling: 4326ms
+	BeginReloadAssembly (558ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (114ms)
+	RebuildCommonClasses (98ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (1525ms)
+		LoadAssemblies (1266ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (559ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (504ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (2019ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1453ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (387ms)
+			ProcessInitializeOnLoadAttributes (855ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (21.7 MB). Loaded Objects now: 8462.
+Memory consumption went from 228.7 MB to 207.0 MB.
+Total: 20.638600 ms (FindLiveObjects: 1.572100 ms CreateObjectMapping: 1.119800 ms MarkObjects: 9.106900 ms  DeleteObjects: 8.837200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.728 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.18 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.086 seconds
+Domain Reload Profiling: 4801ms
+	BeginReloadAssembly (674ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (127ms)
+	RebuildCommonClasses (95ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (1833ms)
+		LoadAssemblies (1593ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (619ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (547ms)
+			ResolveRequiredComponents (35ms)
+	FinalizeReload (2087ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1495ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (373ms)
+			ProcessInitializeOnLoadAttributes (918ms)
+			ProcessInitializeOnLoadMethodAttributes (159ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (22.9 MB). Loaded Objects now: 8464.
+Memory consumption went from 228.7 MB to 205.8 MB.
+Total: 28.240200 ms (FindLiveObjects: 1.385600 ms CreateObjectMapping: 1.215100 ms MarkObjects: 14.111000 ms  DeleteObjects: 11.526400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.378 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
@@ -149,95 +1263,1699 @@ AddComponent and GetComponent will not work with this script.
 Refreshing native plugins compatible for Editor in 3.01 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.739 seconds
-Domain Reload Profiling: 3864ms
-	BeginReloadAssembly (418ms)
+- Finished resetting the current domain, in  2.007 seconds
+Domain Reload Profiling: 4362ms
+	BeginReloadAssembly (575ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (21ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (85ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (136ms)
+	RebuildCommonClasses (96ms)
 	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (104ms)
-	LoadAllAssembliesAndSetupDomain (1484ms)
-		LoadAssemblies (1026ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (1555ms)
+		LoadAssemblies (1332ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (722ms)
-			TypeCache.Refresh (531ms)
-				TypeCache.ScanAssembly (495ms)
-			BuildScriptInfoCaches (158ms)
+		AnalyzeDomain (524ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (477ms)
 			ResolveRequiredComponents (27ms)
-	FinalizeReload (1740ms)
+	FinalizeReload (2008ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1353ms)
+		SetupLoadedEditorAssemblies (1474ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (337ms)
+			ProcessInitializeOnLoadAttributes (925ms)
+			ProcessInitializeOnLoadMethodAttributes (168ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (48ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (23.0 MB). Loaded Objects now: 8466.
+Memory consumption went from 228.7 MB to 205.7 MB.
+Total: 23.335700 ms (FindLiveObjects: 1.536800 ms CreateObjectMapping: 1.687900 ms MarkObjects: 9.785600 ms  DeleteObjects: 10.323600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.183 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.909 seconds
+Domain Reload Profiling: 4069ms
+	BeginReloadAssembly (528ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (106ms)
+	RebuildCommonClasses (99ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1408ms)
+		LoadAssemblies (1141ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (557ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (508ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1910ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1417ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (301ms)
-			ProcessInitializeOnLoadAttributes (794ms)
-			ProcessInitializeOnLoadMethodAttributes (218ms)
-			AfterProcessingInitializeOnLoad (27ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (315ms)
+			ProcessInitializeOnLoadAttributes (881ms)
+			ProcessInitializeOnLoadMethodAttributes (178ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
+		AwakeInstancesAfterBackupRestoration (52ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (23.4 MB). Loaded Objects now: 8468.
+Memory consumption went from 228.7 MB to 205.3 MB.
+Total: 23.588100 ms (FindLiveObjects: 2.430800 ms CreateObjectMapping: 1.232600 ms MarkObjects: 8.889200 ms  DeleteObjects: 11.033500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.045 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.893 seconds
+Domain Reload Profiling: 3914ms
+	BeginReloadAssembly (538ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (112ms)
+	RebuildCommonClasses (95ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (1260ms)
+		LoadAssemblies (1056ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (493ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (442ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1894ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1400ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (323ms)
+			ProcessInitializeOnLoadAttributes (863ms)
+			ProcessInitializeOnLoadMethodAttributes (174ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (45ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (24.4 MB). Loaded Objects now: 8470.
+Memory consumption went from 228.7 MB to 204.3 MB.
+Total: 25.437000 ms (FindLiveObjects: 1.320300 ms CreateObjectMapping: 1.030700 ms MarkObjects: 9.557600 ms  DeleteObjects: 13.526300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.874 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.952 seconds
+Domain Reload Profiling: 3807ms
+	BeginReloadAssembly (460ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (96ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (1210ms)
+		LoadAssemblies (980ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (478ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (430ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1953ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1450ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (325ms)
+			ProcessInitializeOnLoadAttributes (900ms)
+			ProcessInitializeOnLoadMethodAttributes (180ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (49ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (22.0 MB). Loaded Objects now: 8472.
+Memory consumption went from 228.7 MB to 206.7 MB.
+Total: 20.476300 ms (FindLiveObjects: 1.492600 ms CreateObjectMapping: 1.240100 ms MarkObjects: 8.024500 ms  DeleteObjects: 9.717200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.124 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.98 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.860 seconds
+Domain Reload Profiling: 3960ms
+	BeginReloadAssembly (525ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (106ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (1353ms)
+		LoadAssemblies (1172ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (471ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (424ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (1861ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1367ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (313ms)
+			ProcessInitializeOnLoadAttributes (839ms)
+			ProcessInitializeOnLoadMethodAttributes (173ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (53ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7653 unused Assets / (23.0 MB). Loaded Objects now: 8474.
+Memory consumption went from 228.7 MB to 205.7 MB.
+Total: 24.029300 ms (FindLiveObjects: 1.656200 ms CreateObjectMapping: 1.081800 ms MarkObjects: 8.574500 ms  DeleteObjects: 12.714700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (25.2 MB). Loaded Objects now: 8475.
+Memory consumption went from 228.9 MB to 203.7 MB.
+Total: 28.392100 ms (FindLiveObjects: 1.558500 ms CreateObjectMapping: 1.229700 ms MarkObjects: 10.172700 ms  DeleteObjects: 15.428600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.036 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.08 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.700 seconds
+Domain Reload Profiling: 3716ms
+	BeginReloadAssembly (501ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (101ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (1313ms)
+		LoadAssemblies (1035ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (539ms)
+			TypeCache.Refresh (53ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (451ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1701ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1229ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (296ms)
+			ProcessInitializeOnLoadAttributes (748ms)
+			ProcessInitializeOnLoadMethodAttributes (141ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.5 MB). Loaded Objects now: 8477.
+Memory consumption went from 228.7 MB to 207.3 MB.
+Total: 18.468200 ms (FindLiveObjects: 1.267200 ms CreateObjectMapping: 1.024900 ms MarkObjects: 8.049100 ms  DeleteObjects: 8.125200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (22.6 MB). Loaded Objects now: 8477.
+Memory consumption went from 228.9 MB to 206.3 MB.
+Total: 23.273000 ms (FindLiveObjects: 1.981700 ms CreateObjectMapping: 2.514800 ms MarkObjects: 8.998700 ms  DeleteObjects: 9.775100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.853 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.08 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.171 seconds
+Domain Reload Profiling: 5000ms
+	BeginReloadAssembly (640ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (216ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (1969ms)
+		LoadAssemblies (1745ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (517ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (459ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (2171ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1690ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (328ms)
+			ProcessInitializeOnLoadAttributes (1175ms)
+			ProcessInitializeOnLoadMethodAttributes (147ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (40ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.8 MB). Loaded Objects now: 8479.
+Memory consumption went from 228.7 MB to 206.0 MB.
+Total: 24.352400 ms (FindLiveObjects: 2.198300 ms CreateObjectMapping: 2.185700 ms MarkObjects: 9.164500 ms  DeleteObjects: 10.800300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (22.6 MB). Loaded Objects now: 8479.
+Memory consumption went from 228.9 MB to 206.3 MB.
+Total: 22.740200 ms (FindLiveObjects: 1.342400 ms CreateObjectMapping: 1.070400 ms MarkObjects: 9.766300 ms  DeleteObjects: 10.556700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 3567.416899 seconds.
+  path: Assets/Scripts/Healing.cs
+  artifactKey: Guid(f428a42a0df961649aeeafd3721fbfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Healing.cs using Guid(f428a42a0df961649aeeafd3721fbfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3350bc8b159324ed9135c5e573c846d') in 0.006963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.111 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.769 seconds
+Domain Reload Profiling: 3861ms
+	BeginReloadAssembly (575ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (99ms)
+	RebuildCommonClasses (104ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (1296ms)
+		LoadAssemblies (1145ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (498ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (445ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1769ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1249ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (288ms)
+			ProcessInitializeOnLoadAttributes (757ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Refreshing native plugins compatible for Editor in 3.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 454 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7655 unused Assets / (23.3 MB). Loaded Objects now: 8306.
-Memory consumption went from 240.7 MB to 217.4 MB.
-Total: 22.918300 ms (FindLiveObjects: 1.485700 ms CreateObjectMapping: 1.364100 ms MarkObjects: 8.918400 ms  DeleteObjects: 11.147400 ms)
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.0 MB). Loaded Objects now: 8481.
+Memory consumption went from 228.7 MB to 206.8 MB.
+Total: 18.978600 ms (FindLiveObjects: 1.339100 ms CreateObjectMapping: 1.037400 ms MarkObjects: 7.892100 ms  DeleteObjects: 8.707800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.993 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.882 seconds
+Domain Reload Profiling: 3851ms
+	BeginReloadAssembly (515ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (98ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1237ms)
+		LoadAssemblies (1039ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (486ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (438ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1883ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1387ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (328ms)
+			ProcessInitializeOnLoadAttributes (843ms)
+			ProcessInitializeOnLoadMethodAttributes (170ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (52ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.8 MB). Loaded Objects now: 8483.
+Memory consumption went from 228.8 MB to 207.0 MB.
+Total: 20.074700 ms (FindLiveObjects: 1.302900 ms CreateObjectMapping: 1.279300 ms MarkObjects: 8.953500 ms  DeleteObjects: 8.537200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.121 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.761 seconds
+Domain Reload Profiling: 3858ms
+	BeginReloadAssembly (532ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (100ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (1345ms)
+		LoadAssemblies (1170ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (470ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (421ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1762ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1288ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (300ms)
+			ProcessInitializeOnLoadAttributes (805ms)
+			ProcessInitializeOnLoadMethodAttributes (144ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (43ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.0 MB). Loaded Objects now: 8485.
+Memory consumption went from 228.8 MB to 206.8 MB.
+Total: 19.856000 ms (FindLiveObjects: 1.331900 ms CreateObjectMapping: 1.071400 ms MarkObjects: 8.058700 ms  DeleteObjects: 9.391800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.004 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.06 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.828 seconds
+Domain Reload Profiling: 3809ms
+	BeginReloadAssembly (526ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (109ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (1236ms)
+		LoadAssemblies (1047ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (475ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (428ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1829ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1321ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (300ms)
+			ProcessInitializeOnLoadAttributes (823ms)
+			ProcessInitializeOnLoadMethodAttributes (158ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (52ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.7 MB). Loaded Objects now: 8487.
+Memory consumption went from 228.8 MB to 206.1 MB.
+Total: 22.806600 ms (FindLiveObjects: 1.296000 ms CreateObjectMapping: 1.030900 ms MarkObjects: 9.409400 ms  DeleteObjects: 11.068200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (21.8 MB). Loaded Objects now: 8487.
+Memory consumption went from 228.9 MB to 207.1 MB.
+Total: 21.602200 ms (FindLiveObjects: 1.422200 ms CreateObjectMapping: 1.156700 ms MarkObjects: 9.363700 ms  DeleteObjects: 9.657300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.227 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.87 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.135 seconds
+Domain Reload Profiling: 4341ms
+	BeginReloadAssembly (518ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (97ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1468ms)
+		LoadAssemblies (1173ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (585ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (523ms)
+			ResolveRequiredComponents (33ms)
+	FinalizeReload (2136ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1549ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (372ms)
+			ProcessInitializeOnLoadAttributes (905ms)
+			ProcessInitializeOnLoadMethodAttributes (220ms)
+			AfterProcessingInitializeOnLoad (37ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (60ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.8 MB). Loaded Objects now: 8489.
+Memory consumption went from 228.8 MB to 207.0 MB.
+Total: 23.759000 ms (FindLiveObjects: 1.699700 ms CreateObjectMapping: 1.392900 ms MarkObjects: 11.145300 ms  DeleteObjects: 9.518900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (21.5 MB). Loaded Objects now: 8489.
+Memory consumption went from 228.9 MB to 207.4 MB.
+Total: 21.399400 ms (FindLiveObjects: 2.732000 ms CreateObjectMapping: 1.477200 ms MarkObjects: 8.609900 ms  DeleteObjects: 8.577400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.218 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.01 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.737 seconds
+Domain Reload Profiling: 3933ms
+	BeginReloadAssembly (526ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (103ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (1450ms)
+		LoadAssemblies (1172ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (569ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (509ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1738ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1255ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (295ms)
+			ProcessInitializeOnLoadAttributes (769ms)
+			ProcessInitializeOnLoadMethodAttributes (150ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.7 MB). Loaded Objects now: 8491.
+Memory consumption went from 228.8 MB to 207.1 MB.
+Total: 17.987300 ms (FindLiveObjects: 1.294200 ms CreateObjectMapping: 1.031000 ms MarkObjects: 7.854400 ms  DeleteObjects: 7.806100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.927 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.13 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.874 seconds
+Domain Reload Profiling: 3782ms
+	BeginReloadAssembly (515ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (106ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (1198ms)
+		LoadAssemblies (1003ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (474ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (425ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1875ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1377ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (317ms)
+			ProcessInitializeOnLoadAttributes (843ms)
+			ProcessInitializeOnLoadMethodAttributes (176ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (49ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.0 MB). Loaded Objects now: 8493.
+Memory consumption went from 228.8 MB to 206.8 MB.
+Total: 19.970700 ms (FindLiveObjects: 1.364700 ms CreateObjectMapping: 1.040600 ms MarkObjects: 8.472700 ms  DeleteObjects: 9.090800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.985 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.32 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.856 seconds
+Domain Reload Profiling: 3817ms
+	BeginReloadAssembly (534ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (110ms)
+	RebuildCommonClasses (106ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (1196ms)
+		LoadAssemblies (1016ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (474ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (426ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1857ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1373ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (286ms)
+			ProcessInitializeOnLoadAttributes (858ms)
+			ProcessInitializeOnLoadMethodAttributes (183ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.2 MB). Loaded Objects now: 8495.
+Memory consumption went from 228.8 MB to 206.6 MB.
+Total: 21.559300 ms (FindLiveObjects: 1.412600 ms CreateObjectMapping: 1.071100 ms MarkObjects: 9.047600 ms  DeleteObjects: 10.026500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (21.6 MB). Loaded Objects now: 8495.
+Memory consumption went from 229.0 MB to 207.3 MB.
+Total: 24.833500 ms (FindLiveObjects: 1.733300 ms CreateObjectMapping: 2.608500 ms MarkObjects: 11.229800 ms  DeleteObjects: 9.259900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.023 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 4.51 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.122 seconds
+Domain Reload Profiling: 6127ms
+	BeginReloadAssembly (509ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (112ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (136ms)
+	LoadAllAssembliesAndSetupDomain (3209ms)
+		LoadAssemblies (2897ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (616ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (553ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (2124ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1544ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (365ms)
+			ProcessInitializeOnLoadAttributes (979ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
+			AfterProcessingInitializeOnLoad (35ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (53ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.4 MB). Loaded Objects now: 8497.
+Memory consumption went from 228.8 MB to 207.4 MB.
+Total: 19.141400 ms (FindLiveObjects: 1.527600 ms CreateObjectMapping: 1.069900 ms MarkObjects: 8.577500 ms  DeleteObjects: 7.964000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (22.2 MB). Loaded Objects now: 8497.
+Memory consumption went from 229.0 MB to 206.8 MB.
+Total: 20.742100 ms (FindLiveObjects: 1.354000 ms CreateObjectMapping: 1.074200 ms MarkObjects: 9.189600 ms  DeleteObjects: 9.122300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.207 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.12 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.799 seconds
+Domain Reload Profiling: 4988ms
+	BeginReloadAssembly (467ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (89ms)
+	RebuildCommonClasses (105ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (1506ms)
+		LoadAssemblies (1194ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (571ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (509ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (2800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1461ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (406ms)
+			ProcessInitializeOnLoadAttributes (858ms)
+			ProcessInitializeOnLoadMethodAttributes (154ms)
+			AfterProcessingInitializeOnLoad (28ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 9.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.2 MB). Loaded Objects now: 8499.
+Memory consumption went from 228.8 MB to 206.6 MB.
+Total: 47.704100 ms (FindLiveObjects: 3.061600 ms CreateObjectMapping: 3.022700 ms MarkObjects: 19.025000 ms  DeleteObjects: 22.592400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (21.2 MB). Loaded Objects now: 8499.
+Memory consumption went from 229.0 MB to 207.7 MB.
+Total: 18.657500 ms (FindLiveObjects: 1.454000 ms CreateObjectMapping: 1.174700 ms MarkObjects: 7.973700 ms  DeleteObjects: 8.053100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.151 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.765 seconds
+Domain Reload Profiling: 3894ms
+	BeginReloadAssembly (542ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (112ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (1346ms)
+		LoadAssemblies (1104ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (538ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (485ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1767ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1285ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (316ms)
+			ProcessInitializeOnLoadAttributes (776ms)
+			ProcessInitializeOnLoadMethodAttributes (154ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.8 MB). Loaded Objects now: 8501.
+Memory consumption went from 228.8 MB to 207.0 MB.
+Total: 22.262500 ms (FindLiveObjects: 1.555200 ms CreateObjectMapping: 1.238400 ms MarkObjects: 9.992800 ms  DeleteObjects: 9.473800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (24.6 MB). Loaded Objects now: 8501.
+Memory consumption went from 229.0 MB to 204.4 MB.
+Total: 31.013600 ms (FindLiveObjects: 1.700300 ms CreateObjectMapping: 1.649600 ms MarkObjects: 11.774900 ms  DeleteObjects: 15.885900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.986 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.872 seconds
+Domain Reload Profiling: 5836ms
+	BeginReloadAssembly (802ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (271ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (2939ms)
+		LoadAssemblies (2741ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (593ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (529ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (1873ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1333ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (359ms)
+			ProcessInitializeOnLoadAttributes (779ms)
+			ProcessInitializeOnLoadMethodAttributes (149ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.6 MB). Loaded Objects now: 8503.
+Memory consumption went from 228.8 MB to 207.2 MB.
+Total: 23.020900 ms (FindLiveObjects: 1.822300 ms CreateObjectMapping: 1.477700 ms MarkObjects: 10.686400 ms  DeleteObjects: 9.030300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (22.1 MB). Loaded Objects now: 8503.
+Memory consumption went from 229.0 MB to 206.9 MB.
+Total: 23.173000 ms (FindLiveObjects: 1.417700 ms CreateObjectMapping: 1.051300 ms MarkObjects: 11.431700 ms  DeleteObjects: 9.270600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 13.136 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.75 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.866 seconds
+Domain Reload Profiling: 14978ms
+	BeginReloadAssembly (790ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (357ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (12096ms)
+		LoadAssemblies (11808ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (589ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (518ms)
+			ResolveRequiredComponents (42ms)
+	FinalizeReload (1867ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1348ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (324ms)
+			ProcessInitializeOnLoadAttributes (827ms)
+			ProcessInitializeOnLoadMethodAttributes (155ms)
+			AfterProcessingInitializeOnLoad (28ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (41ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.8 MB). Loaded Objects now: 8505.
+Memory consumption went from 228.8 MB to 207.0 MB.
+Total: 20.275400 ms (FindLiveObjects: 1.415600 ms CreateObjectMapping: 1.163900 ms MarkObjects: 9.478100 ms  DeleteObjects: 8.215300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7647 unused Assets / (22.0 MB). Loaded Objects now: 8505.
+Memory consumption went from 229.0 MB to 207.0 MB.
+Total: 21.112600 ms (FindLiveObjects: 1.351000 ms CreateObjectMapping: 1.045300 ms MarkObjects: 9.385900 ms  DeleteObjects: 9.327800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.553 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.054 seconds
+Domain Reload Profiling: 5583ms
+	BeginReloadAssembly (714ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (268ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (1587ms)
+		LoadAssemblies (1393ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (500ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (448ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (3055ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2539ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (455ms)
+			ProcessInitializeOnLoadAttributes (1608ms)
+			ProcessInitializeOnLoadMethodAttributes (432ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (49ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.6 MB). Loaded Objects now: 8507.
+Memory consumption went from 228.8 MB to 207.2 MB.
+Total: 22.212500 ms (FindLiveObjects: 1.622100 ms CreateObjectMapping: 1.283200 ms MarkObjects: 10.257900 ms  DeleteObjects: 9.046500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 10.444 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 4.39 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.425 seconds
+Domain Reload Profiling: 12852ms
+	BeginReloadAssembly (621ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (167ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (9602ms)
+		LoadAssemblies (9189ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (733ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (610ms)
+			ResolveRequiredComponents (98ms)
+	FinalizeReload (2426ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1775ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (343ms)
+			ProcessInitializeOnLoadAttributes (1223ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 4.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (21.7 MB). Loaded Objects now: 8509.
+Memory consumption went from 228.8 MB to 207.1 MB.
+Total: 26.185200 ms (FindLiveObjects: 2.242900 ms CreateObjectMapping: 1.774900 ms MarkObjects: 11.083600 ms  DeleteObjects: 11.081400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.504 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.06 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.995 seconds
+Domain Reload Profiling: 4475ms
+	BeginReloadAssembly (543ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (109ms)
+	RebuildCommonClasses (99ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (1710ms)
+		LoadAssemblies (1494ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (517ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (465ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (1996ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1448ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (347ms)
+			ProcessInitializeOnLoadAttributes (878ms)
+			ProcessInitializeOnLoadMethodAttributes (178ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (52ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (23.4 MB). Loaded Objects now: 8511.
+Memory consumption went from 228.8 MB to 205.4 MB.
+Total: 27.969700 ms (FindLiveObjects: 3.295000 ms CreateObjectMapping: 1.266800 ms MarkObjects: 10.088500 ms  DeleteObjects: 13.316400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 3394.766454 seconds.
+  path: Assets/Prefabs/Pine.prefab
+  artifactKey: Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pine.prefab using Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5bb6f9dfd0d133a298e6ad72b8ef9d1') in 19.1527502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 595
 
 ========================================================================
 Received Import Request.
-  Time since last request: 61497.358786 seconds.
-  path: Assets/Materials/Hurt.mat
-  artifactKey: Guid(6c1b5be9e10bb3c4fa61c77b3c541392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Hurt.mat using Guid(6c1b5be9e10bb3c4fa61c77b3c541392) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adfb9f19fe0bc8f02467ed2ea50bf206') in 1.7859043 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 330
+  Time since last request: 0.000088 seconds.
+  path: Assets/Prefabs/Pine.prefab
+  artifactKey: Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pine.prefab using Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3951f21d19af0686d04324955269583') in 0.0679993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 275
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  9.982 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.75 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.013 seconds
+Domain Reload Profiling: 11975ms
+	BeginReloadAssembly (682ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (61ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (126ms)
+	RebuildCommonClasses (104ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (9048ms)
+		LoadAssemblies (8661ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (684ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (621ms)
+			ResolveRequiredComponents (39ms)
+	FinalizeReload (2014ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1460ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (342ms)
+			ProcessInitializeOnLoadAttributes (898ms)
+			ProcessInitializeOnLoadMethodAttributes (173ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7656 unused Assets / (22.7 MB). Loaded Objects now: 8534.
+Memory consumption went from 233.3 MB to 210.5 MB.
+Total: 26.367400 ms (FindLiveObjects: 1.341700 ms CreateObjectMapping: 1.121400 ms MarkObjects: 10.250600 ms  DeleteObjects: 13.651700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.918 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.825 seconds
+Domain Reload Profiling: 3726ms
+	BeginReloadAssembly (486ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (102ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (1225ms)
+		LoadAssemblies (981ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (494ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (448ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1826ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1333ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (306ms)
+			ProcessInitializeOnLoadAttributes (807ms)
+			ProcessInitializeOnLoadMethodAttributes (177ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (51ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.1 MB). Loaded Objects now: 8536.
+Memory consumption went from 233.1 MB to 211.0 MB.
+Total: 24.742200 ms (FindLiveObjects: 1.733400 ms CreateObjectMapping: 2.048500 ms MarkObjects: 10.759400 ms  DeleteObjects: 10.198200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.121 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.919 seconds
+Domain Reload Profiling: 5011ms
+	BeginReloadAssembly (1364ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (99ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (1506ms)
+		LoadAssemblies (1882ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (565ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (471ms)
+			ResolveRequiredComponents (74ms)
+	FinalizeReload (1920ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1407ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (325ms)
+			ProcessInitializeOnLoadAttributes (877ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (48ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.7 MB). Loaded Objects now: 8538.
+Memory consumption went from 233.1 MB to 210.4 MB.
+Total: 26.326600 ms (FindLiveObjects: 2.133200 ms CreateObjectMapping: 1.470700 ms MarkObjects: 10.633400 ms  DeleteObjects: 12.086600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 11.198 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.63 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.404 seconds
+Domain Reload Profiling: 13577ms
+	BeginReloadAssembly (1656ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (901ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (9297ms)
+		LoadAssemblies (9210ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (653ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (577ms)
+			ResolveRequiredComponents (45ms)
+	FinalizeReload (2406ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1469ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (356ms)
+			ProcessInitializeOnLoadAttributes (887ms)
+			ProcessInitializeOnLoadMethodAttributes (180ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (422ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7654 unused Assets / (22.3 MB). Loaded Objects now: 8540.
+Memory consumption went from 233.1 MB to 210.8 MB.
+Total: 22.361300 ms (FindLiveObjects: 1.337100 ms CreateObjectMapping: 1.063900 ms MarkObjects: 10.560500 ms  DeleteObjects: 9.395200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 465.511283 seconds.
+  path: Assets/Prefabs/Fire.prefab
+  artifactKey: Guid(d1aeba774f09a994a8c751516a5be7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fire.prefab using Guid(d1aeba774f09a994a8c751516a5be7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f16d12df576198f2b6b554ee38652a02') in 6.9710179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 345
 
 ========================================================================
 Received Import Request.
-  Time since last request: 62.042226 seconds.
-  path: Assets/Art/2D/UI/aim.png
-  artifactKey: Guid(0f9fe27ba3bff3444bbc38185f1dcda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/2D/UI/aim.png using Guid(0f9fe27ba3bff3444bbc38185f1dcda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46eab19e5c9feb7c4a90d8ff4b2470ed') in 0.0680516 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000087 seconds.
+  path: Assets/Prefabs/Leafs Variant.prefab
+  artifactKey: Guid(8b9f7789ee064f647bafaef35fa345e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Leafs Variant.prefab using Guid(8b9f7789ee064f647bafaef35fa345e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5d6cfd9f63979e3d1277d716ae1ac5e') in 0.0304882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Art/2D/UI/sheet.png
-  artifactKey: Guid(5c58935f3ec0aba49acf511dc6ce4235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/2D/UI/sheet.png using Guid(5c58935f3ec0aba49acf511dc6ce4235) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edb4bb99d0ea92d55133fdd9715c085e') in 0.0147764 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000053 seconds.
+  path: Assets/Prefabs/Oak.prefab
+  artifactKey: Guid(3f5e1048d07f855409f69365c63f3453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Oak.prefab using Guid(3f5e1048d07f855409f69365c63f3453) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e8ac5ba0d424f2f209a2665705e5788') in 0.0557188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 172
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Art/2D/Grass/PT_Ground_Grass_Green_01.png
-  artifactKey: Guid(13370cbb6e84ea542ac5232d5a3315b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/2D/Grass/PT_Ground_Grass_Green_01.png using Guid(13370cbb6e84ea542ac5232d5a3315b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa23dfced73b8be2f92d3aa645097f64') in 0.0341704 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000042 seconds.
+  path: Assets/Prefabs/SpeedEnemy.prefab
+  artifactKey: Guid(4ddcead73f49d1f4e9446b303c8ca118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpeedEnemy.prefab using Guid(4ddcead73f49d1f4e9446b303c8ca118) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd64c432d1c6fa1fc89161ace75d4ca41') in 0.1785585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 248
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Art/3D/Items/Target/ArcheryTarget_Normal_compressed.jpg
-  artifactKey: Guid(f16d2be363847eb4e8c1bbb97fbb832c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/3D/Items/Target/ArcheryTarget_Normal_compressed.jpg using Guid(f16d2be363847eb4e8c1bbb97fbb832c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f513dcbfafa5c7f1218803dfa7d8711') in 0.0215185 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/Pine.prefab
+  artifactKey: Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pine.prefab using Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d270c003aafc4971a482580b637ee57') in 0.0616074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 279
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Scenes/Level1.asset
-  artifactKey: Guid(45fb1b932d7a2594b9aa8af48b8545f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1.asset using Guid(45fb1b932d7a2594b9aa8af48b8545f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7856c6a4d1f7916318575699632d98c') in 0.075278 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 395
+  Time since last request: 0.268052 seconds.
+  path: Assets/Prefabs/Oak.prefab
+  artifactKey: Guid(3f5e1048d07f855409f69365c63f3453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Oak.prefab using Guid(3f5e1048d07f855409f69365c63f3453) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7193eec44331800dce1c46e48520404') in 0.0334062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 172
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 public class Health : MonoBehaviour
 {
     public float health = 100f;
@@ -12,13 +14,13 @@ public class Health : MonoBehaviour
 
     public virtual void TakeDamage(float amount)
     {
-        if(health >= 0)
+        if (health >= 0)
         {
             health -= amount;
         }
-        
     }
 }
+
 public class Player : Health
 {
     public Camera playerCamera;
@@ -30,16 +32,39 @@ public class Player : Health
     public float lookXLimit = 45f;
     public float defaultHeight = 2f;
     public float crouchHeight = 1f;
-    public float crouchSpeed = 3f; 
+    public float crouchSpeed = 3f;
 
     public GameObject rightArm;
     public GameObject leftArm;
+    public Healing healingArea;
+
+    public GameObject leftArmGlowPart;
+    public Material glowMaterial;
+    public Material originalMaterial;
+    public float timeToGlow = 0.5f;
+    public float glowDuration = 1f;
+
+    public Image redOverlay;
+    public float overlayDuration = 0.5f;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
-
     private bool canMove = true;
+
+    private float glowTimer = 0f;
+    private bool glowActivated = false;
+    private Renderer glowRenderer;
+    private Material glowInstance;
+    private Color currentEmission;
+    private Color targetEmission = new Color(88f / 255f, 191f / 255f, 0f / 255f);
+
+    private Vector3 cameraOriginalPos;
+    private float shakeTimer = 0f;
+    private float shakeDuration = 0.15f;
+    private float shakeMagnitude = 0.05f;
+    private float smoothShakeSpeed = 10f;
+    private float overlayTimer = 0f;
 
     void Start()
     {
@@ -48,7 +73,22 @@ public class Player : Health
         Cursor.visible = false;
 
         if (leftArm != null)
-            leftArm.SetActive(false);
+            leftArm.SetActive(true);
+
+        glowInstance = new Material(glowMaterial);
+        glowInstance.EnableKeyword("_EMISSION");
+        glowInstance.SetColor("_EmissionColor", Color.black);
+
+        if (leftArmGlowPart != null)
+        {
+            glowRenderer = leftArmGlowPart.GetComponent<Renderer>();
+            glowInstance = new Material(glowMaterial);
+            glowInstance.EnableKeyword("_EMISSION");
+            glowRenderer.material = originalMaterial;
+        }
+
+        if (playerCamera != null)
+            cameraOriginalPos = playerCamera.transform.localPosition;
     }
 
     void Update()
@@ -99,15 +139,107 @@ public class Player : Health
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
-        if (Input.GetKey(KeyCode.Q))
+        if (rightArm != null)
         {
-            if (rightArm != null) rightArm.SetActive(false);
-            if (leftArm != null) leftArm.SetActive(true);
+            rightArm.SetActive(true);
+            Vector3 startPos = new Vector3(-0.03f, -0.72f, 1.67f);
+            Vector3 endPos = new Vector3(-0.1f, -5.6f, -3f);
+            Quaternion startRot = Quaternion.Euler(9.69f, -177.6f, 15.65f);
+            Quaternion endRot = Quaternion.Euler(3.54f, -85.94f, -0.77f);
+            float speed = 5f;
+
+            if (Input.GetKey(KeyCode.Q))
+            {
+                healingArea.gameObject.SetActive(true);
+                rightArm.transform.localPosition = Vector3.Lerp(rightArm.transform.localPosition, endPos, Time.deltaTime * speed);
+                rightArm.transform.localRotation = Quaternion.Lerp(rightArm.transform.localRotation, endRot, Time.deltaTime * speed);
+            }
+            else
+            {
+                healingArea.gameObject.SetActive(false);
+                rightArm.transform.localPosition = Vector3.Lerp(rightArm.transform.localPosition, startPos, Time.deltaTime * speed);
+                rightArm.transform.localRotation = Quaternion.Lerp(rightArm.transform.localRotation, startRot, Time.deltaTime * speed);
+            }
+        }
+
+        if (leftArm != null)
+        {
+            leftArm.SetActive(true);
+            Vector3 startPos = new Vector3(-1.313309f, -2.882696f, -5.200942f);
+            Vector3 endPos = new Vector3(-0.950336f, -5.801865f, -2.641529f);
+            Quaternion startRot = Quaternion.Euler(3.543f, -85.937f, -33.969f);
+            Quaternion endRot = Quaternion.Euler(3.543f, -85.937f, 3.077f);
+            float speed = 5f;
+
+            if (Input.GetKey(KeyCode.Q))
+            {
+                leftArm.transform.localPosition = Vector3.Lerp(leftArm.transform.localPosition, endPos, Time.deltaTime * speed);
+                leftArm.transform.localRotation = Quaternion.Lerp(leftArm.transform.localRotation, endRot, Time.deltaTime * speed);
+
+                glowTimer += Time.deltaTime;
+                if (glowTimer >= timeToGlow && !glowActivated)
+                {
+                    glowActivated = true;
+                    if (glowRenderer != null)
+                        glowRenderer.material = glowInstance;
+                    currentEmission = Color.black;
+                }
+
+                if (glowActivated)
+                {
+                    Color finalEmission = Color.Lerp(currentEmission, targetEmission, Time.deltaTime / glowDuration);
+                    glowInstance.SetColor("_EmissionColor", finalEmission * 6f);
+                    currentEmission = finalEmission;
+
+                    float shakeX = Mathf.Sin(Time.time * 60f) * 0.0007f;
+                    float shakeY = Mathf.Sin(Time.time * 90f) * 0.0007f;
+                    Vector3 shakeOffset = new Vector3(shakeX, shakeY, 0f);
+                    leftArm.transform.localPosition += shakeOffset;
+                }
+
+                healingArea.gameObject.SetActive(true);
+            }
+            else
+            {
+                leftArm.transform.localPosition = Vector3.Lerp(leftArm.transform.localPosition, startPos, Time.deltaTime * speed);
+                leftArm.transform.localRotation = Quaternion.Lerp(leftArm.transform.localRotation, startRot, Time.deltaTime * speed);
+                healingArea.gameObject.SetActive(false);
+                glowTimer = 0f;
+                glowActivated = false;
+                if (glowRenderer != null)
+                    glowRenderer.material = originalMaterial;
+            }
+        }
+
+        if (shakeTimer > 0)
+        {
+            Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
+            Vector3 targetPos = cameraOriginalPos + randomOffset;
+            playerCamera.transform.localPosition = Vector3.Lerp(playerCamera.transform.localPosition, targetPos, Time.deltaTime * smoothShakeSpeed);
+            shakeTimer -= Time.deltaTime;
         }
         else
         {
-            if (rightArm != null) rightArm.SetActive(true);
-            if (leftArm != null) leftArm.SetActive(false);
+            playerCamera.transform.localPosition = Vector3.Lerp(playerCamera.transform.localPosition, cameraOriginalPos, Time.deltaTime * smoothShakeSpeed);
         }
+
+        if (overlayTimer > 0)
+        {
+            overlayTimer -= Time.deltaTime;
+            float alpha = Mathf.Lerp(0f, 0.4f, overlayTimer / overlayDuration);
+            redOverlay.color = new Color(1f, 0f, 0f, alpha);
+        }
+        else
+        {
+            redOverlay.color = Color.clear;
+        }
+    }
+
+    public override void TakeDamage(float amount)
+    {
+        base.TakeDamage(amount);
+        shakeTimer = shakeDuration;
+        overlayTimer = overlayDuration;
+        redOverlay.color = new Color(1f, 0f, 0f, 0.4f);
     }
 }
