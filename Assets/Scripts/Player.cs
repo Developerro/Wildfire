@@ -1,12 +1,18 @@
 using UnityEngine;
-
-
 public class Health : MonoBehaviour
 {
     public float health = 100f;
-    public void TakeDamage(float amount)
+    public float maxHealth = 100f;
+    public bool isHealing = false;
+
+    public virtual void Heal(float amount)
     {
-        if (health >= 0)
+        health = Mathf.Min(health + amount, maxHealth);
+    }
+
+    public virtual void TakeDamage(float amount)
+    {
+        if(health >= 0)
         {
             health -= amount;
         }

@@ -5,6 +5,7 @@ public class Tree : Health
     public GameObject normalModel;
     public GameObject burntModel;
     public FireArea fireArea;
+    public ParticleSystem healingEffect;
 
     private bool isBurnt = false;
 
@@ -22,6 +23,21 @@ public class Tree : Health
         if (isBurnt && health >= 100f)
         {
             ReviveTree();
+        }
+
+        if (isHealing)
+        {
+            if (healingEffect != null && !healingEffect.isPlaying)
+            {
+                healingEffect.Play();
+            }
+        }
+        else
+        {
+            if (healingEffect != null && healingEffect.isPlaying)
+            {
+                healingEffect.Stop();
+            }
         }
     }
 
