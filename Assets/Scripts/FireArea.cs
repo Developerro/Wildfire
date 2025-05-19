@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class FireArea : MonoBehaviour
 {
     public GameObject firePrefab;
@@ -37,6 +36,7 @@ public class FireArea : MonoBehaviour
         center.y = terrain.SampleHeight(center) + terrain.transform.position.y;
 
         GameObject firstFire = Instantiate(firePrefab, center, Quaternion.identity, transform);
+        PlayAllParticles(firstFire);
         activeFires.Add(firstFire);
         BurnGrass(center);
         StartCoroutine(AutoDestroyWithFade(firstFire, fireLifetime));
@@ -62,6 +62,7 @@ public class FireArea : MonoBehaviour
                 if (IsInsideArea(spreadPos) && !FireAlreadyExistsNear(spreadPos))
                 {
                     GameObject newFire = Instantiate(firePrefab, spreadPos, Quaternion.identity, transform);
+                    PlayAllParticles(newFire);
                     newFires.Add(newFire);
                     BurnGrass(spreadPos);
                     StartCoroutine(AutoDestroyWithFade(newFire, fireLifetime));
@@ -72,6 +73,12 @@ public class FireArea : MonoBehaviour
             activeFires.RemoveAll(f => f == null);
 
             TryCreateBigFire();
+
+            if (activeFires.Count == 0)
+            {
+                Destroy(gameObject);
+                yield break;
+            }
         }
     }
 
@@ -187,6 +194,7 @@ public class FireArea : MonoBehaviour
                 center /= nearbyFires.Count;
 
                 GameObject big = Instantiate(bigFirePrefab, center, Quaternion.identity, transform);
+                PlayAllParticles(big);
                 BurnGrass(center);
                 StartCoroutine(AutoDestroyWithFade(big, fireLifetime * 2f));
 
@@ -200,5 +208,12 @@ public class FireArea : MonoBehaviour
                 Destroy(f);
             activeFires.Remove(f);
         }
+    }
+
+    void PlayAllParticles(GameObject go)
+    {
+        ParticleSystem[] psSystems = go.GetComponentsInChildren<ParticleSystem>(true);
+        foreach (var ps in psSystems)
+            ps.Play();
     }
 }

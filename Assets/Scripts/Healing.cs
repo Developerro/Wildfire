@@ -15,13 +15,24 @@ public class Healing : MonoBehaviour
             if (tree != null && !treesInArea.Contains(tree))
             {
                 treesInArea.Add(tree);
-                tree.isHealing = true;
             }
         }
 
         if (other.CompareTag("Fire"))
         {
             StartCoroutine(ExtinguishFire(other.gameObject));
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Tree"))
+        {
+            Tree tree = other.GetComponent<Tree>();
+            if (tree != null && treesInArea.Contains(tree))
+            {
+                tree.isHealing = true;
+            }
         }
     }
 
@@ -38,11 +49,25 @@ public class Healing : MonoBehaviour
         }
     }
 
+    void OnDisable()
+    {
+        foreach (Tree tree in treesInArea)
+        {
+            if (tree != null)
+            {
+                tree.isHealing = false;
+            }
+        }
+    }
+
     void Update()
     {
         foreach (Tree tree in treesInArea)
         {
-            tree.Heal(healPerSecond * Time.deltaTime);
+            if (tree != null && tree.isHealing)
+            {
+                tree.Heal(healPerSecond * Time.deltaTime);
+            }
         }
     }
 

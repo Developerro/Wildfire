@@ -1,11 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Linq;
 using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform player;
+    private Transform player;
     public float attackDistance = 5f;
     public GameObject flameObject;
     public float health = 100f;
@@ -32,13 +32,16 @@ public class Enemy : MonoBehaviour
         agent.speed = enemySpeed;
         flameObject?.SetActive(false);
         rb.isKinematic = true;
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            player = playerObj.transform;
     }
 
     void Update()
     {
         if (isDead) return;
 
-        if (lockedOnPlayer)
+        if (lockedOnPlayer && player != null)
             AttackPlayer();
         else
         {

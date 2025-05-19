@@ -4882,7 +4882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629be895682e22144aace090a8021186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 100
   maxHealth: 100
   isHealing: 0
   normalModel: {fileID: 4794586141200779074}
