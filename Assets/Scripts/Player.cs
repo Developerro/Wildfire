@@ -48,6 +48,15 @@ public class Player : Health
     public Image redOverlay;
     public float overlayDuration = 0.5f;
 
+    public float maxMana = 100f;
+    public float currentMana = 100f;
+    public float manaRegenDelay = 3f;
+    public float manaRegenDuration = 3f;
+    public float manaCostPerSecond = 5f;
+
+    private float manaRegenTimer = 0f;
+    private bool isUsingMana = false;
+
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
@@ -176,7 +185,7 @@ public class Player : Health
             Quaternion endRot = rightArmStartRot;
             float speed = 5f;
 
-            if (Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(KeyCode.Q) && currentMana > 0f)
             {
                 healingArea.gameObject.SetActive(true);
                 rightArm.transform.localPosition = Vector3.Lerp(rightArm.transform.localPosition, endPos, Time.deltaTime * speed);
@@ -199,8 +208,14 @@ public class Player : Health
             Quaternion endRot = Quaternion.Euler(3.543f, -85.937f, 3.077f);
             float speed = 5f;
 
-            if (Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(KeyCode.Q) && currentMana > 0f)
             {
+                isUsingMana = true;
+                manaRegenTimer = manaRegenDelay;
+
+                currentMana -= manaCostPerSecond * Time.deltaTime;
+                currentMana = Mathf.Max(currentMana, 0f);
+
                 leftArm.transform.localPosition = Vector3.Lerp(leftArm.transform.localPosition, endPos, Time.deltaTime * speed);
                 leftArm.transform.localRotation = Quaternion.Lerp(leftArm.transform.localRotation, endRot, Time.deltaTime * speed);
 
@@ -229,6 +244,8 @@ public class Player : Health
             }
             else
             {
+                isUsingMana = false;
+
                 leftArm.transform.localPosition = Vector3.Lerp(leftArm.transform.localPosition, startPos, Time.deltaTime * speed);
                 leftArm.transform.localRotation = Quaternion.Lerp(leftArm.transform.localRotation, startRot, Time.deltaTime * speed);
                 healingArea.gameObject.SetActive(false);
@@ -236,6 +253,20 @@ public class Player : Health
                 glowActivated = false;
                 if (glowRenderer != null)
                     glowRenderer.material = originalMaterial;
+            }
+        }
+
+        if (!isUsingMana)
+        {
+            if (manaRegenTimer > 0f)
+            {
+                manaRegenTimer -= Time.deltaTime;
+            }
+            else if (currentMana < maxMana)
+            {
+                float regenRate = maxMana / manaRegenDuration;
+                currentMana += regenRate * Time.deltaTime;
+                currentMana = Mathf.Min(currentMana, maxMana);
             }
         }
 
