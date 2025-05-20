@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     private Renderer rend;
     private Color originalColor;
 
-    void Start()
+    protected virtual void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
             player = playerObj.transform;
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (isDead) return;
 
@@ -127,14 +127,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void SetFlameActive(bool active)
+    protected virtual void SetFlameActive(bool active)
     {
         animator?.SetBool("isAttacking", active);
         if (flameObject != null && flameObject.activeSelf != active)
             flameObject.SetActive(active);
     }
 
-    public void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         if (isDead) return;
 
