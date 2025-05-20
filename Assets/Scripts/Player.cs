@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Health : MonoBehaviour
 {
@@ -66,6 +67,11 @@ public class Player : Health
     private float smoothShakeSpeed = 10f;
     private float overlayTimer = 0f;
 
+    private Vector3 rightArmStartPos = new Vector3(-0.1f, -5.6f, -3f);
+    private Quaternion rightArmStartRot = Quaternion.Euler(3.54f, -85.94f, -0.77f);
+    private Vector3 rightArmEndPos = new Vector3(-0.03f, -0.72f, 1.67f);
+    private Quaternion rightArmEndRot = Quaternion.Euler(9.69f, -177.6f, 15.65f);
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -89,6 +95,29 @@ public class Player : Health
 
         if (playerCamera != null)
             cameraOriginalPos = playerCamera.transform.localPosition;
+
+        if (rightArm != null)
+        {
+            rightArm.SetActive(true);
+            rightArm.transform.localPosition = rightArmStartPos;
+            rightArm.transform.localRotation = rightArmStartRot;
+            StartCoroutine(RaiseRightArm());
+        }
+    }
+
+    IEnumerator RaiseRightArm()
+    {
+        float duration = 1f;
+        float t = 0f;
+
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float progress = t / duration;
+            rightArm.transform.localPosition = Vector3.Lerp(rightArmStartPos, rightArmEndPos, progress);
+            rightArm.transform.localRotation = Quaternion.Lerp(rightArmStartRot, rightArmEndRot, progress);
+            yield return null;
+        }
     }
 
     void Update()
@@ -141,11 +170,10 @@ public class Player : Health
 
         if (rightArm != null)
         {
-            rightArm.SetActive(true);
-            Vector3 startPos = new Vector3(-0.03f, -0.72f, 1.67f);
-            Vector3 endPos = new Vector3(-0.1f, -5.6f, -3f);
-            Quaternion startRot = Quaternion.Euler(9.69f, -177.6f, 15.65f);
-            Quaternion endRot = Quaternion.Euler(3.54f, -85.94f, -0.77f);
+            Vector3 startPos = rightArmEndPos;
+            Vector3 endPos = rightArmStartPos;
+            Quaternion startRot = rightArmEndRot;
+            Quaternion endRot = rightArmStartRot;
             float speed = 5f;
 
             if (Input.GetKey(KeyCode.Q))

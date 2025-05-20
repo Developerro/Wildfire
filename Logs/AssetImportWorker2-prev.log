@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker2
 -projectPath
 C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker2.log
 -srvPort
 56140
 -job-worker-count
@@ -59,14 +59,14 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8028]  Target information:
+Player connection [21508]  Target information:
 
-Player connection [8028]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2246629098 [EditorId] 2246629098 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21508]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4144735890 [EditorId] 4144735890 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8028]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 2246629098 [EditorId] 2246629098 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21508]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 4144735890 [EditorId] 4144735890 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [8028] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8028] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21508] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21508] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 33.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.41f1 (46e447368a18)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/Resources/UnitySubsystems
@@ -95,43 +95,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.41f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015098 seconds.
-- Loaded All Assemblies, in  1.035 seconds
+Registered in 0.014509 seconds.
+- Loaded All Assemblies, in  1.068 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.216 seconds
-Domain Reload Profiling: 2239ms
-	BeginReloadAssembly (362ms)
+- Finished resetting the current domain, in  1.176 seconds
+Domain Reload Profiling: 2231ms
+	BeginReloadAssembly (364ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (143ms)
-	LoadAllAssembliesAndSetupDomain (388ms)
-		LoadAssemblies (347ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (149ms)
+	LoadAllAssembliesAndSetupDomain (416ms)
+		LoadAssemblies (349ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (381ms)
-			TypeCache.Refresh (379ms)
-				TypeCache.ScanAssembly (349ms)
+		AnalyzeDomain (408ms)
+			TypeCache.Refresh (405ms)
+				TypeCache.ScanAssembly (374ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1217ms)
+	FinalizeReload (1177ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1081ms)
+		SetupLoadedEditorAssemblies (1048ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (61ms)
+			InitializePlatformSupportModulesInManaged (63ms)
 			SetLoadedEditorAssemblies (9ms)
 			BeforeProcessingInitializeOnLoad (146ms)
-			ProcessInitializeOnLoadAttributes (397ms)
-			ProcessInitializeOnLoadMethodAttributes (467ms)
+			ProcessInitializeOnLoadAttributes (436ms)
+			ProcessInitializeOnLoadMethodAttributes (394ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,141 +140,133 @@ Domain Reload Profiling: 2239ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  4.604 seconds
+- Loaded All Assemblies, in  4.587 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 12.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.07 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.410 seconds
-Domain Reload Profiling: 8987ms
-	BeginReloadAssembly (534ms)
+- Finished resetting the current domain, in  4.419 seconds
+Domain Reload Profiling: 8981ms
+	BeginReloadAssembly (506ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (125ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (117ms)
-	LoadAllAssembliesAndSetupDomain (3766ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (142ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (122ms)
+	LoadAllAssembliesAndSetupDomain (3762ms)
 		LoadAssemblies (3132ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (974ms)
-			TypeCache.Refresh (708ms)
-				TypeCache.ScanAssembly (657ms)
-			BuildScriptInfoCaches (223ms)
-			ResolveRequiredComponents (34ms)
-	FinalizeReload (4412ms)
+		AnalyzeDomain (954ms)
+			TypeCache.Refresh (689ms)
+				TypeCache.ScanAssembly (640ms)
+			BuildScriptInfoCaches (224ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (4421ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3106ms)
+		SetupLoadedEditorAssemblies (3132ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (15ms)
-			BeforeProcessingInitializeOnLoad (553ms)
-			ProcessInitializeOnLoadAttributes (1890ms)
-			ProcessInitializeOnLoadMethodAttributes (566ms)
-			AfterProcessingInitializeOnLoad (71ms)
-			EditorAssembliesLoaded (3ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (535ms)
+			ProcessInitializeOnLoadAttributes (1912ms)
+			ProcessInitializeOnLoadMethodAttributes (601ms)
+			AfterProcessingInitializeOnLoad (63ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (45ms)
+		AwakeInstancesAfterBackupRestoration (51ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 7.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 9.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 468 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7730 unused Assets / (20.5 MB). Loaded Objects now: 8390.
-Memory consumption went from 243.4 MB to 222.9 MB.
-Total: 100.823900 ms (FindLiveObjects: 7.118900 ms CreateObjectMapping: 5.596000 ms MarkObjects: 38.015200 ms  DeleteObjects: 50.087800 ms)
+Unloading 7730 unused Assets / (21.4 MB). Loaded Objects now: 8390.
+Memory consumption went from 241.5 MB to 220.0 MB.
+Total: 92.584600 ms (FindLiveObjects: 6.923100 ms CreateObjectMapping: 5.388900 ms MarkObjects: 35.740200 ms  DeleteObjects: 44.525000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20090.683029 seconds.
-  path: Assets/Prefabs/Global Volume.prefab
-  artifactKey: Guid(6ee78f6aeb0a4544c9082406b0602bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Global Volume.prefab using Guid(6ee78f6aeb0a4544c9082406b0602bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c52f8222d3faf93444f5715dfd9fe2a') in 0.8934551 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 20090.683526 seconds.
+  path: Assets/Prefabs/NormalEnemy.prefab
+  artifactKey: Guid(20009de23506e544881d8a762f79b83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NormalEnemy.prefab using Guid(20009de23506e544881d8a762f79b83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de4c3684a10397967f00b826a42429af') in 25.4927176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 548
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Prefabs/Pine.prefab
-  artifactKey: Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pine.prefab using Guid(96299535fa5b5264a87479cddb1d5334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd20c46dd0cdcdaeaac14825cb4ec8c69') in 24.2248647 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 604
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Prefabs/Oak.prefab
-  artifactKey: Guid(3f5e1048d07f855409f69365c63f3453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Oak.prefab using Guid(3f5e1048d07f855409f69365c63f3453) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9040e955d09dde10d7595dbb37f3d37b') in 0.259825 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 172
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(9c53962885c2c4f449125a979d6ad240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(9c53962885c2c4f449125a979d6ad240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd65b75f456837a3494a5e6e744543932') in 0.00113 seconds
+  Time since last request: 0.000125 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(97f814720b8ae854fb0f165ee33c53e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(97f814720b8ae854fb0f165ee33c53e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd5bafd1a9ec3cb7109a2ce87458ed6c') in 0.2027896 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Prefabs/Arrow.prefab
+  artifactKey: Guid(91c9c16dcfcc86d46805f452856659ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Arrow.prefab using Guid(91c9c16dcfcc86d46805f452856659ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a40ee157fd734c4496bcf028af21c9d') in 0.2203624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  6.297 seconds
+- Loaded All Assemblies, in  6.301 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.194 seconds
-Domain Reload Profiling: 8473ms
-	BeginReloadAssembly (609ms)
+- Finished resetting the current domain, in  2.218 seconds
+Domain Reload Profiling: 8503ms
+	BeginReloadAssembly (600ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (59ms)
+		DisableScriptedObjects (62ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (140ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (5476ms)
+		CreateAndSetChildDomain (135ms)
+	RebuildCommonClasses (88ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (5489ms)
 		LoadAssemblies (5162ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (606ms)
+		AnalyzeDomain (607ms)
 			TypeCache.Refresh (26ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (535ms)
-			ResolveRequiredComponents (34ms)
-	FinalizeReload (2195ms)
+			BuildScriptInfoCaches (533ms)
+			ResolveRequiredComponents (38ms)
+	FinalizeReload (2219ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1488ms)
+		SetupLoadedEditorAssemblies (1495ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (366ms)
-			ProcessInitializeOnLoadAttributes (892ms)
-			ProcessInitializeOnLoadMethodAttributes (184ms)
-			AfterProcessingInitializeOnLoad (27ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (372ms)
+			ProcessInitializeOnLoadAttributes (883ms)
+			ProcessInitializeOnLoadMethodAttributes (192ms)
+			AfterProcessingInitializeOnLoad (30ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (40ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 169 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7731 unused Assets / (21.1 MB). Loaded Objects now: 8440.
-Memory consumption went from 220.2 MB to 199.1 MB.
-Total: 57.309000 ms (FindLiveObjects: 3.897900 ms CreateObjectMapping: 4.324100 ms MarkObjects: 21.421200 ms  DeleteObjects: 27.662300 ms)
+Unloading 7730 unused Assets / (20.9 MB). Loaded Objects now: 8442.
+Memory consumption went from 229.4 MB to 208.5 MB.
+Total: 58.442600 ms (FindLiveObjects: 3.147500 ms CreateObjectMapping: 4.864600 ms MarkObjects: 19.392700 ms  DeleteObjects: 31.034800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
