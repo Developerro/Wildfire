@@ -78,7 +78,14 @@ public class Healing : MonoBehaviour
         {
             ps.Stop();
         }
-        yield return new WaitForSeconds(2f);
+
+        FireArea fireArea = fire.transform.parent?.GetComponent<FireArea>();
+        if (fireArea != null)
+        {
+            fireArea.NotifyFireDestroyedExternally(fire);
+        }
+
+        yield return new WaitForSeconds(1f);
         Destroy(fire);
     }
 }

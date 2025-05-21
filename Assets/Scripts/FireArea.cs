@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -35,11 +35,7 @@ public class FireArea : MonoBehaviour
         Vector3 center = area.bounds.center;
         center.y = terrain.SampleHeight(center) + terrain.transform.position.y;
 
-        GameObject firstFire = Instantiate(firePrefab, center, Quaternion.identity, transform);
-        PlayAllParticles(firstFire);
-        activeFires.Add(firstFire);
-        BurnGrass(center);
-        StartCoroutine(AutoDestroyWithFade(firstFire, fireLifetime));
+        StartCoroutine(SpawnDelayedFire(center));
 
         StartCoroutine(SpreadFire());
     }
@@ -50,8 +46,6 @@ public class FireArea : MonoBehaviour
         {
             yield return new WaitForSeconds(spreadInterval);
 
-            List<GameObject> newFires = new List<GameObject>();
-
             foreach (GameObject fire in activeFires)
             {
                 if (fire == null) continue;
@@ -61,15 +55,10 @@ public class FireArea : MonoBehaviour
 
                 if (IsInsideArea(spreadPos) && !FireAlreadyExistsNear(spreadPos))
                 {
-                    GameObject newFire = Instantiate(firePrefab, spreadPos, Quaternion.identity, transform);
-                    PlayAllParticles(newFire);
-                    newFires.Add(newFire);
-                    BurnGrass(spreadPos);
-                    StartCoroutine(AutoDestroyWithFade(newFire, fireLifetime));
+                    StartCoroutine(SpawnDelayedFire(spreadPos));
                 }
             }
 
-            activeFires.AddRange(newFires);
             activeFires.RemoveAll(f => f == null);
 
             TryCreateBigFire();
@@ -80,6 +69,20 @@ public class FireArea : MonoBehaviour
                 yield break;
             }
         }
+    }
+
+    IEnumerator SpawnDelayedFire(Vector3 position)
+    {
+        GameObject newFire = Instantiate(firePrefab, position, Quaternion.identity, transform);
+        newFire.SetActive(false);
+
+        yield return new WaitForSeconds(3f);
+
+        newFire.SetActive(true);
+        PlayAllParticles(newFire);
+        activeFires.Add(newFire);
+        BurnGrass(position);
+        StartCoroutine(AutoDestroyWithFade(newFire, fireLifetime));
     }
 
     void BurnGrass(Vector3 worldPos)
@@ -161,6 +164,10 @@ public class FireArea : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.2f);
+
+        // Notifica que o fogo foi destruído
+        NotifyFireDestroyedExternally(fire);
+
         Destroy(fire);
     }
 
@@ -215,5 +222,17 @@ public class FireArea : MonoBehaviour
         ParticleSystem[] psSystems = go.GetComponentsInChildren<ParticleSystem>(true);
         foreach (var ps in psSystems)
             ps.Play();
+    }
+
+    public void NotifyFireDestroyedExternally(GameObject fire)
+    {
+        if (fire != null)
+        {
+            activeFires.Remove(fire);
+            if (activeFires.Count == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

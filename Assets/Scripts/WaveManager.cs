@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,30 +27,40 @@ public class WaveManager : MonoBehaviour
     public float fadeDuration = 0.5f;
     public float targetPanelAlpha = 0.85f;
 
+    public OakTutorial oakTutorial;
+
     private int currentWaveIndex = 0;
     private bool waitingForNextWave = false;
     private bool waveInProgress = false;
     private bool gameEnded = false;
+    private bool wavesStarted = false;
 
     void Start()
     {
-        SetAlpha(0f);
-        StartCoroutine(StartNextWave());
+        SetAlpha(0f, 0f);
     }
 
     void Update()
     {
         if (gameEnded) return;
 
-        if (AllTreesBurnt())
+        if (!wavesStarted)
         {
-            EndGame("A floresta foi consumida pela chama");
+            if (oakTutorial != null && oakTutorial.finishedTutorial)
+            {
+                wavesStarted = true;
+                StartCoroutine(StartNextWave());
+            }
             return;
         }
 
-        if (waveInProgress &&
-            !waitingForNextWave &&
-            Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length == 0)
+        if (AllTreesBurnt())
+        {
+            EndGame("A floresta foi consumida pela chama", Color.red);
+            return;
+        }
+
+        if (waveInProgress && !waitingForNextWave && Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length == 0)
         {
             waitingForNextWave = true;
             StartCoroutine(WaitAndStartNextWave());
@@ -68,7 +79,9 @@ public class WaveManager : MonoBehaviour
         if (currentWaveIndex >= waveList.Count)
         {
             if (!AllTreesBurnt())
-                EndGame("Voce conseguiu proteger a floresta");
+            {
+                EndGame("Voce conseguiu proteger a floresta", Color.green);
+            }
             yield break;
         }
 
@@ -107,21 +120,34 @@ public class WaveManager : MonoBehaviour
     bool AllTreesBurnt()
     {
         Tree[] trees = GameObject.FindGameObjectsWithTag("Tree")
-                                 .Select(go => go.GetComponent<Tree>())
-                                 .Where(tree => tree != null)
-                                 .ToArray();
+            .Select(go => go.GetComponent<Tree>())
+            .Where(tree => tree != null)
+            .ToArray();
 
         if (trees.Length == 0) return false;
 
         return trees.All(tree => tree.IsBurnt());
     }
 
-    void EndGame(string message)
+    void EndGame(string message, Color color)
     {
+        if (gameEnded) return;
+
         gameEnded = true;
+
         waveTextUI.text = message;
-        waveTextUI.color = message.Contains("consumida") ? Color.red : Color.green;
-        StartCoroutine(FadeIn());
+        waveTextUI.color = new Color(color.r, color.g, color.b, 0f);
+
+        StartCoroutine(ShowEndMessageAndRestart());
+    }
+
+    IEnumerator ShowEndMessageAndRestart()
+    {
+        yield return StartCoroutine(FadeIn());
+
+        yield return new WaitForSeconds(5f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator FadeIn()
@@ -130,12 +156,20 @@ public class WaveManager : MonoBehaviour
         while (t < fadeDuration)
         {
             t += Time.deltaTime;
-            float textAlpha = Mathf.Lerp(0f, 1f, t / fadeDuration);
-            float panelAlpha = Mathf.Lerp(0f, targetPanelAlpha, t / fadeDuration);
-            SetAlpha(textAlpha, panelAlpha);
+            float alphaText = Mathf.Lerp(0f, 1f, t / fadeDuration);
+            float alphaPanel = Mathf.Lerp(0f, targetPanelAlpha, t / fadeDuration);
+
+            Color textColor = waveTextUI.color;
+            waveTextUI.color = new Color(textColor.r, textColor.g, textColor.b, alphaText);
+
+            SetAlphaPanel(alphaPanel);
+
             yield return null;
         }
-        SetAlpha(1f, targetPanelAlpha);
+
+        Color finalTextColor = waveTextUI.color;
+        waveTextUI.color = new Color(finalTextColor.r, finalTextColor.g, finalTextColor.b, 1f);
+        SetAlphaPanel(targetPanelAlpha);
     }
 
     IEnumerator FadeOut()
@@ -146,27 +180,33 @@ public class WaveManager : MonoBehaviour
         while (t < fadeDuration)
         {
             t += Time.deltaTime;
-            float textAlpha = Mathf.Lerp(1f, 0f, t / fadeDuration);
-            float panelAlpha = Mathf.Lerp(targetPanelAlpha, 0f, t / fadeDuration);
-            SetAlpha(textAlpha, panelAlpha);
+            float alphaText = Mathf.Lerp(1f, 0f, t / fadeDuration);
+            float alphaPanel = Mathf.Lerp(targetPanelAlpha, 0f, t / fadeDuration);
+            SetAlpha(alphaText, alphaPanel);
             yield return null;
         }
         SetAlpha(0f, 0f);
     }
 
-    void SetAlpha(float textAlpha)
+    void SetAlpha(float textAlpha, float panelAlpha)
     {
-        SetAlpha(textAlpha, 0f);
+        SetAlphaPanel(panelAlpha);
+
+        Color textColor = waveTextUI.color;
+        waveTextUI.color = new Color(textColor.r, textColor.g, textColor.b, textAlpha);
     }
 
-    void SetAlpha(float textAlpha, float panelAlpha)
+    void SetAlphaPanel(float panelAlpha)
     {
         Color panelColor = wavePanel.color;
         panelColor.a = panelAlpha;
         wavePanel.color = panelColor;
+    }
 
-        Color textColor = waveTextUI.color;
-        textColor.a = textAlpha;
-        waveTextUI.color = textColor;
+    public void ShowDeathMessage()
+    {
+        waveTextUI.text = "Voce morreu";
+        waveTextUI.color = Color.red;
+        StartCoroutine(ShowEndMessageAndRestart());
     }
 }

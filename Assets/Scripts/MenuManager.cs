@@ -9,10 +9,17 @@ public class MenuManager : MonoBehaviour
     public GameObject canvasHUD;
     public Transform cameraTargetPosition;
 
+    public GameObject panelTutorial;
+    public GameObject textoTutorial1;
+    public GameObject textoTutorial2;
+
     public float transitionSpeed = 2f;
     private bool isTransitioning = false;
 
     private CanvasGroup hudCanvasGroup;
+    private CanvasGroup panelGroup;
+    private CanvasGroup texto1Group;
+    private CanvasGroup texto2Group;
 
     void Start()
     {
@@ -23,12 +30,18 @@ public class MenuManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        hudCanvasGroup = canvasHUD.GetComponent<CanvasGroup>();
-        if (hudCanvasGroup != null)
-        {
-            hudCanvasGroup.alpha = 0f;
-        }
+        hudCanvasGroup = GetOrAddCanvasGroup(canvasHUD);
+        hudCanvasGroup.alpha = 0f;
+
+        panelGroup = GetOrAddCanvasGroup(panelTutorial);
+        texto1Group = GetOrAddCanvasGroup(textoTutorial1);
+        texto2Group = GetOrAddCanvasGroup(textoTutorial2);
+
+        panelTutorial.SetActive(false);
+        textoTutorial1.SetActive(false);
+        textoTutorial2.SetActive(false);
     }
+
     public void OnQuitClicked()
     {
         Application.Quit();
@@ -36,10 +49,23 @@ public class MenuManager : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
+
     public void OnPlayClicked()
     {
         isTransitioning = true;
         canvasMenu.SetActive(false);
+
+        panelTutorial.SetActive(true);
+        textoTutorial1.SetActive(true);
+        textoTutorial2.SetActive(true);
+
+        panelGroup.alpha = 0f;
+        texto1Group.alpha = 0f;
+        texto2Group.alpha = 0f;
+
+        StartCoroutine(FadeIn(panelGroup));
+        StartCoroutine(FadeIn(texto1Group));
+        StartCoroutine(FadeIn(texto2Group));
     }
 
     void Update()
@@ -64,25 +90,31 @@ public class MenuManager : MonoBehaviour
         introCamera.gameObject.SetActive(false);
 
         canvasHUD.SetActive(true);
-        StartCoroutine(FadeInHUD());
+        StartCoroutine(FadeIn(hudCanvasGroup));
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    IEnumerator FadeInHUD()
+    IEnumerator FadeIn(CanvasGroup group)
     {
-        float duration = 2f; 
+        float duration = 1.5f;
         float currentTime = 0f;
 
         while (currentTime < duration)
         {
             currentTime += Time.deltaTime;
-            float alpha = Mathf.Clamp01(currentTime / duration);
-            if (hudCanvasGroup != null)
-                hudCanvasGroup.alpha = alpha;
-
+            group.alpha = Mathf.Clamp01(currentTime / duration);
             yield return null;
         }
+
+        group.alpha = 1f;
+    }
+
+    CanvasGroup GetOrAddCanvasGroup(GameObject obj)
+    {
+        var cg = obj.GetComponent<CanvasGroup>();
+        if (cg == null) cg = obj.AddComponent<CanvasGroup>();
+        return cg;
     }
 }

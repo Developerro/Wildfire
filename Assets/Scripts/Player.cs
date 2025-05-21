@@ -76,10 +76,15 @@ public class Player : Health
     private float smoothShakeSpeed = 10f;
     private float overlayTimer = 0f;
 
+    public WaveManager waveManager;
+
     private Vector3 rightArmStartPos = new Vector3(-0.1f, -5.6f, -3f);
     private Quaternion rightArmStartRot = Quaternion.Euler(3.54f, -85.94f, -0.77f);
     private Vector3 rightArmEndPos = new Vector3(-0.03f, -0.72f, 1.67f);
     private Quaternion rightArmEndRot = Quaternion.Euler(9.69f, -177.6f, 15.65f);
+
+    private bool isDead = false;
+    private Quaternion deathRotation;
 
     void Start()
     {
@@ -131,6 +136,12 @@ public class Player : Health
 
     void Update()
     {
+        if (isDead)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, deathRotation, Time.deltaTime * 2f);
+            return;
+        }
+
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
@@ -185,7 +196,7 @@ public class Player : Health
             Quaternion endRot = rightArmStartRot;
             float speed = 5f;
 
-            if (Input.GetKey(KeyCode.Q) && currentMana > 0f)
+            if (Input.GetMouseButton(1) && currentMana > 0f)
             {
                 healingArea.gameObject.SetActive(true);
                 rightArm.transform.localPosition = Vector3.Lerp(rightArm.transform.localPosition, endPos, Time.deltaTime * speed);
@@ -208,7 +219,7 @@ public class Player : Health
             Quaternion endRot = Quaternion.Euler(3.543f, -85.937f, 3.077f);
             float speed = 5f;
 
-            if (Input.GetKey(KeyCode.Q) && currentMana > 0f)
+            if (Input.GetMouseButton(1) && currentMana > 0f)
             {
                 isUsingMana = true;
                 manaRegenTimer = manaRegenDelay;
@@ -299,6 +310,25 @@ public class Player : Health
         base.TakeDamage(amount);
         shakeTimer = shakeDuration;
         overlayTimer = overlayDuration;
+
+        if (health <= 0f && !isDead)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        isDead = true;
+        canMove = false;
+        deathRotation = Quaternion.Euler(0f, transform.eulerAngles.y, 90f);
         redOverlay.color = new Color(1f, 0f, 0f, 0.4f);
+        overlayTimer = overlayDuration;
+        waveManager.ShowDeathMessage();
+    }
+
+    public override void Heal(float amount)
+    {
+        base.Heal(amount);
     }
 }

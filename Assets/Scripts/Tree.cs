@@ -7,7 +7,7 @@ public class Tree : Health
     public FireArea fireArea;
     public ParticleSystem healingEffect;
 
-    private bool isBurnt = false;
+    public bool isBurnt = false;
 
     void Update()
     {
@@ -41,7 +41,7 @@ public class Tree : Health
         }
     }
 
-    void BurnTree()
+    public void BurnTree()
     {
         isBurnt = true;
 
@@ -49,7 +49,7 @@ public class Tree : Health
         if (burntModel != null) burntModel.SetActive(true);
     }
 
-    void ReviveTree()
+    public void ReviveTree()
     {
         isBurnt = false;
 
