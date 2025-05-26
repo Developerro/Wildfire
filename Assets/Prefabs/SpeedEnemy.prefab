@@ -53,7 +53,7 @@ MonoBehaviour:
   attackDistance: 5
   flameObject: {fileID: 1930208501361487202}
   health: 100
-  enemySpeed: 4
+  enemySpeed: 7
   animator: {fileID: 3753505564776756256}
   weaponTransform: {fileID: 4174960360538212485}
 --- !u!195 &300323469406388942

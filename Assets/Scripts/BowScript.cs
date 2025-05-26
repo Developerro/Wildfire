@@ -19,7 +19,7 @@ public class BowScript : MonoBehaviour
     private Vector2 originalAimSize;
 
     private bool canShoot = true;
-    private float cooldown = 0.75f;
+    private float cooldown = 0.5f;
     private float cooldownTimer = 0f;
 
     void Start()

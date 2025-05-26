@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public GameObject canvasMenu;
     public GameObject canvasHUD;
     public Transform cameraTargetPosition;
+    public OakTutorial oak;
 
     public GameObject panelTutorial;
     public GameObject textoTutorial1;
@@ -54,6 +55,7 @@ public class MenuManager : MonoBehaviour
     {
         isTransitioning = true;
         canvasMenu.SetActive(false);
+        oak.health = 0;
 
         panelTutorial.SetActive(true);
         textoTutorial1.SetActive(true);

@@ -1,6 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
-
+using System.Collections.Generic;
 
 public class FireScript : MonoBehaviour
 {
@@ -10,8 +9,7 @@ public class FireScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.CompareTag("Player") || other.CompareTag("Tree"))
+        if ((other.CompareTag("Player") || other.CompareTag("Tree")) && gameObject.activeInHierarchy)
         {
             if (!targetsInFire.ContainsKey(other))
             {
@@ -30,16 +28,36 @@ public class FireScript : MonoBehaviour
 
     private void Update()
     {
+        if (!gameObject.activeInHierarchy) return;
+
         float damage = damagePerSecond * Time.deltaTime;
+
+        List<Collider> toRemove = new List<Collider>();
 
         foreach (var pair in targetsInFire)
         {
             Collider target = pair.Key;
+
+            if (target == null)
+            {
+                toRemove.Add(target);
+                continue;
+            }
 
             if (target.TryGetComponent(out Health health))
             {
                 health.TakeDamage(damage);
             }
         }
+
+        foreach (var target in toRemove)
+        {
+            targetsInFire.Remove(target);
+        }
+    }
+
+    private void OnDisable()
+    {
+        targetsInFire.Clear();
     }
 }

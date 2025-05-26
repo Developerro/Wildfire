@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|c:\\users\\foca\\documents\\estudos\\faculdade\\projeto 3d\\wildfire\\assets\\scripts\\oaktutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\oaktutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|c:\\users\\foca\\documents\\estudos\\faculdade\\projeto 3d\\wildfire\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\oaktutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\oaktutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\firearea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|c:\\users\\foca\\documents\\estudos\\faculdade\\projeto 3d\\wildfire\\assets\\scripts\\speedenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\speedenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\speedenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -86,7 +86,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OakTutorial.cs",
               "DocumentMoniker": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\OakTutorial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OakTutorial.cs",
@@ -94,8 +94,7 @@
               "RelativeToolTip": "Assets\\Scripts\\OakTutorial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:32:20.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T15:32:20.269Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Tree.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:39:22.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:39:22.883Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TankEnemy.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAAwE4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T19:14:58.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T19:14:58.637Z"
             },
             {
               "$type": "Document",
@@ -169,8 +166,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FireArea.cs",
               "ViewState": "AgIAAHoAAAAAAAAAAADwv4wAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:56:07.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:56:07.032Z"
             },
             {
               "$type": "Document",
@@ -182,8 +178,7 @@
               "RelativeToolTip": "Assets\\Scripts\\FireScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T19:34:24.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T19:34:24.313Z"
             },
             {
               "$type": "Document",
@@ -207,8 +202,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SpeedEnemy.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T19:41:49.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T19:41:49.761Z"
             },
             {
               "$type": "Document",
@@ -220,8 +214,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T19:18:38.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T19:18:38.62Z"
             },
             {
               "$type": "Document",
@@ -231,7 +224,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\WaveManager.cs",
               "ToolTip": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\WaveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\WaveManager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwNQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:22:39.358Z",
               "EditorCaption": ""
@@ -246,8 +239,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Healing.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAcwFcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T01:14:58.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T01:14:58.616Z"
             },
             {
               "$type": "Document",
@@ -259,18 +251,17 @@
               "RelativeToolTip": "Assets\\Scripts\\GrassManager.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:48:47.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T20:48:47.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAADUBAAAAAAAAAAAmwEUBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAIBJwN0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T19:46:25.64Z",
               "EditorCaption": ""

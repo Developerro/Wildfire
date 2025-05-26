@@ -5,7 +5,7 @@ using UnityEngine;
 public class Healing : MonoBehaviour
 {
     private List<Tree> treesInArea = new List<Tree>();
-    public float healPerSecond = 10f;
+    public float healPerSecond = 25f;
 
     void OnTriggerEnter(Collider other)
     {
@@ -58,6 +58,8 @@ public class Healing : MonoBehaviour
                 tree.isHealing = false;
             }
         }
+
+        treesInArea.Clear();
     }
 
     void Update()
@@ -85,7 +87,7 @@ public class Healing : MonoBehaviour
             fireArea.NotifyFireDestroyedExternally(fire);
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         Destroy(fire);
     }
 }

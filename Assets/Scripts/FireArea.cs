@@ -165,7 +165,6 @@ public class FireArea : MonoBehaviour
 
         yield return new WaitForSeconds(0.2f);
 
-        // Notifica que o fogo foi destruído
         NotifyFireDestroyedExternally(fire);
 
         Destroy(fire);

@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDistance: 7
   flameObject: {fileID: 7642171060243727847}
-  health: 100
+  health: 200
   enemySpeed: 4
   animator: {fileID: 1753107826032343852}
   weaponTransform: {fileID: 3647594249906400048}

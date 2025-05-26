@@ -34,6 +34,8 @@ public class WaveManager : MonoBehaviour
     private bool waveInProgress = false;
     private bool gameEnded = false;
     private bool wavesStarted = false;
+    private bool waitingForTreeHealing = false;
+    private bool treeHealMessageShown = false;
 
     void Start()
     {
@@ -60,6 +62,15 @@ public class WaveManager : MonoBehaviour
             return;
         }
 
+        if (waitingForTreeHealing)
+        {
+            if (AllTreesHealed())
+            {
+                EndGame("Voce conseguiu proteger a floresta", Color.green);
+            }
+            return;
+        }
+
         if (waveInProgress && !waitingForNextWave && Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length == 0)
         {
             waitingForNextWave = true;
@@ -78,9 +89,18 @@ public class WaveManager : MonoBehaviour
     {
         if (currentWaveIndex >= waveList.Count)
         {
-            if (!AllTreesBurnt())
+            if (AllTreesHealed())
             {
                 EndGame("Voce conseguiu proteger a floresta", Color.green);
+            }
+            else
+            {
+                if (!treeHealMessageShown)
+                {
+                    treeHealMessageShown = true;
+                    StartCoroutine(ShowTreeHealMessage());
+                }
+                waitingForTreeHealing = true;
             }
             yield break;
         }
@@ -98,6 +118,16 @@ public class WaveManager : MonoBehaviour
 
         waveInProgress = true;
         waitingForNextWave = false;
+    }
+
+    IEnumerator ShowTreeHealMessage()
+    {
+        waveTextUI.text = "Cure as arvores";
+        waveTextUI.color = Color.yellow;
+
+        yield return StartCoroutine(FadeIn());
+        yield return new WaitForSeconds(5f);
+        yield return StartCoroutine(FadeOut());
     }
 
     void SpawnEnemies(Wave wave)
@@ -127,6 +157,18 @@ public class WaveManager : MonoBehaviour
         if (trees.Length == 0) return false;
 
         return trees.All(tree => tree.IsBurnt());
+    }
+
+    bool AllTreesHealed()
+    {
+        Tree[] trees = GameObject.FindGameObjectsWithTag("Tree")
+            .Select(go => go.GetComponent<Tree>())
+            .Where(tree => tree != null)
+            .ToArray();
+
+        if (trees.Length == 0) return false;
+
+        return trees.All(tree => !tree.IsBurnt());
     }
 
     void EndGame(string message, Color color)

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|c:\\users\\foca\\documents\\estudos\\faculdade\\projeto 3d\\wildfire\\assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25B89CAB-812F-554C-750C-DE2DAB19D95B}|Assembly-CSharp.csproj|C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\assets\\scripts\\oaktutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
@@ -219,13 +219,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WaveManager.cs",
               "DocumentMoniker": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\WaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WaveManager.cs",
               "ToolTip": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\WaveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\WaveManager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwNQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAA4wGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T15:22:39.358Z",
               "EditorCaption": ""
@@ -256,16 +256,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAAAN0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAIBJwN0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T19:46:25.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T19:46:25.64Z"
             },
             {
               "$type": "Document",
@@ -276,8 +275,7 @@
               "ToolTip": "C:\\Users\\Foca\\Documents\\Estudos\\Faculdade\\Projeto 3D\\Wildfire\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T19:36:12.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T19:36:12.083Z"
             },
             {
               "$type": "Document",
