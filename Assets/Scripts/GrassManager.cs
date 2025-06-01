@@ -8,6 +8,8 @@ public class GrassManager : MonoBehaviour
     private int[,] originalDetails;
     public int detailLayer = 0;
 
+    public AudioSource windAudioSource;
+
     private void Start()
     {
         terrain = GetComponent<Terrain>();
@@ -15,6 +17,12 @@ public class GrassManager : MonoBehaviour
         {
             terrainData = terrain.terrainData;
             SaveOriginalGrass();
+        }
+
+        if (windAudioSource != null)
+        {
+            windAudioSource.loop = true;
+            windAudioSource.Play();
         }
     }
 

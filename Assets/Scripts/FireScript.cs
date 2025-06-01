@@ -4,8 +4,18 @@ using System.Collections.Generic;
 public class FireScript : MonoBehaviour
 {
     public float damagePerSecond = 5f;
+    public AudioSource fireAudioSource;
 
     private Dictionary<Collider, float> targetsInFire = new Dictionary<Collider, float>();
+
+    private void Start()
+    {
+        if (fireAudioSource != null)
+        {
+            fireAudioSource.loop = true;
+            fireAudioSource.Play();
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,7 +41,6 @@ public class FireScript : MonoBehaviour
         if (!gameObject.activeInHierarchy) return;
 
         float damage = damagePerSecond * Time.deltaTime;
-
         List<Collider> toRemove = new List<Collider>();
 
         foreach (var pair in targetsInFire)

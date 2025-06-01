@@ -20,6 +20,7 @@ public class WaveManager : MonoBehaviour
     public GameObject commonEnemyPrefab;
     public GameObject fastEnemyPrefab;
     public GameObject tankEnemyPrefab;
+    public Player Player;
 
     public Text waveTextUI;
     public Image wavePanel;
@@ -28,6 +29,9 @@ public class WaveManager : MonoBehaviour
     public float targetPanelAlpha = 0.85f;
 
     public OakTutorial oakTutorial;
+
+    public AudioSource mainMusicSource;
+    public AudioSource waveStartMusicSource;
 
     private int currentWaveIndex = 0;
     private bool waitingForNextWave = false;
@@ -40,6 +44,12 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         SetAlpha(0f, 0f);
+
+        if (mainMusicSource != null && !mainMusicSource.isPlaying)
+        {
+            mainMusicSource.loop = true;
+            mainMusicSource.Play();
+        }
     }
 
     void Update()
@@ -105,10 +115,16 @@ public class WaveManager : MonoBehaviour
             yield break;
         }
 
+        if (waveStartMusicSource != null)
+        {
+            waveStartMusicSource.PlayOneShot(waveStartMusicSource.clip);
+        }
+
         Wave currentWave = waveList[currentWaveIndex];
 
         waveTextUI.text = $"Wave {currentWaveIndex + 1}";
         waveTextUI.color = Color.white;
+        Player.health += 25;
 
         yield return StartCoroutine(FadeIn());
         yield return new WaitForSeconds(2f);
@@ -186,9 +202,7 @@ public class WaveManager : MonoBehaviour
     IEnumerator ShowEndMessageAndRestart()
     {
         yield return StartCoroutine(FadeIn());
-
         yield return new WaitForSeconds(5f);
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

@@ -22,6 +22,8 @@ public class MenuManager : MonoBehaviour
     private CanvasGroup texto1Group;
     private CanvasGroup texto2Group;
 
+    public AudioSource menuMusic;
+
     void Start()
     {
         introCamera.gameObject.SetActive(true);
@@ -41,6 +43,9 @@ public class MenuManager : MonoBehaviour
         panelTutorial.SetActive(false);
         textoTutorial1.SetActive(false);
         textoTutorial2.SetActive(false);
+
+        if (menuMusic != null && !menuMusic.isPlaying)
+            menuMusic.Play();
     }
 
     public void OnQuitClicked()
@@ -55,7 +60,11 @@ public class MenuManager : MonoBehaviour
     {
         isTransitioning = true;
         canvasMenu.SetActive(false);
-        oak.health = 0;
+        oak.health = 60;
+        oak.isBurnt = true;
+
+        if (menuMusic != null)
+            menuMusic.Stop();
 
         panelTutorial.SetActive(true);
         textoTutorial1.SetActive(true);
@@ -75,25 +84,19 @@ public class MenuManager : MonoBehaviour
         if (isTransitioning)
         {
             introCamera.transform.position = Vector3.Lerp(introCamera.transform.position, cameraTargetPosition.position, Time.deltaTime * transitionSpeed);
-
             float distance = Vector3.Distance(introCamera.transform.position, cameraTargetPosition.position);
             if (distance < 0.1f)
-            {
                 FinishTransition();
-            }
         }
     }
 
     void FinishTransition()
     {
         isTransitioning = false;
-
         player.SetActive(true);
         introCamera.gameObject.SetActive(false);
-
         canvasHUD.SetActive(true);
         StartCoroutine(FadeIn(hudCanvasGroup));
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -102,14 +105,12 @@ public class MenuManager : MonoBehaviour
     {
         float duration = 1.5f;
         float currentTime = 0f;
-
         while (currentTime < duration)
         {
             currentTime += Time.deltaTime;
             group.alpha = Mathf.Clamp01(currentTime / duration);
             yield return null;
         }
-
         group.alpha = 1f;
     }
 

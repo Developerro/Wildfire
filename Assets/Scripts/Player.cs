@@ -22,6 +22,7 @@ public class Health : MonoBehaviour
     }
 }
 
+
 public class Player : Health
 {
     public Camera playerCamera;
@@ -53,6 +54,14 @@ public class Player : Health
     public float manaRegenDelay = 3f;
     public float manaRegenDuration = 3f;
     public float manaCostPerSecond = 5f;
+    public float launchForceUlt = 20f;
+    public Image flashOverlay;
+    public GameObject ultimatePrefab;
+    public Transform ultimateSpawnPoint;
+
+    public AudioSource footstepSource;
+    public AudioClip walkClip;
+    public AudioClip runClip;
 
     private float manaRegenTimer = 0f;
     private bool isUsingMana = false;
@@ -86,6 +95,15 @@ public class Player : Health
     private bool isDead = false;
     private Quaternion deathRotation;
 
+    private bool isCastingUlt = false;
+    private float ultCastDuration = 1.5f;
+    private float ultCastTimer = 0f;
+    private bool hasThrownUlt = false;
+    private float ultCooldownTimer = 0f;
+
+    public bool IsUsingMana { get { return isUsingMana; } }
+    public bool IsCastingUlt { get { return isCastingUlt; } }
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -117,6 +135,12 @@ public class Player : Health
             rightArm.transform.localRotation = rightArmStartRot;
             StartCoroutine(RaiseRightArm());
         }
+
+        if (footstepSource != null)
+        {
+            footstepSource.loop = true;
+            footstepSource.playOnAwake = false;
+        }
     }
 
     IEnumerator RaiseRightArm()
@@ -132,6 +156,28 @@ public class Player : Health
             rightArm.transform.localRotation = Quaternion.Lerp(rightArmStartRot, rightArmEndRot, progress);
             yield return null;
         }
+    }
+
+    public void DisableFlash()
+    {
+        if (flashOverlay != null)
+        {
+            flashOverlay.color = Color.clear;
+        }
+    }
+
+    public void EnableFlash()
+    {
+        if (flashOverlay != null)
+        {
+            flashOverlay.color = new Color(0f, 1f, 4f / 255f, 194f / 255f);
+        }
+    }
+
+    IEnumerator ClearFlash()
+    {
+        yield return null;
+        flashOverlay.color = Color.clear;
     }
 
     void Update()
@@ -150,7 +196,6 @@ public class Player : Health
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
@@ -188,6 +233,29 @@ public class Player : Health
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
+        if (ultCooldownTimer > 0f)
+            ultCooldownTimer -= Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Q) && !isCastingUlt && currentMana >= maxMana)
+        {
+            isCastingUlt = true;
+            ultCastTimer = ultCastDuration;
+            hasThrownUlt = false;
+            currentMana = 0f;
+            ultCooldownTimer = 10f;
+        }
+
+        HandleRightArm();
+        HandleLeftArm();
+        HandleManaRegen();
+        HandleCameraShake();
+        HandleRedOverlay();
+        HandleUltimate();
+        HandleFootsteps(characterController.velocity.magnitude > 0.1f, isRunning);
+    }
+
+    void HandleRightArm()
+    {
         if (rightArm != null)
         {
             Vector3 startPos = rightArmEndPos;
@@ -196,20 +264,34 @@ public class Player : Health
             Quaternion endRot = rightArmStartRot;
             float speed = 5f;
 
-            if (Input.GetMouseButton(1) && currentMana > 0f)
+            bool isRightArmDown = (Input.GetMouseButton(1) && currentMana > 0f) || isCastingUlt;
+
+            if (isRightArmDown)
             {
+                isUsingMana = Input.GetMouseButton(1) && currentMana > 0f;
+                if (isUsingMana)
+                {
+                    manaRegenTimer = manaRegenDelay;
+                    currentMana -= manaCostPerSecond * Time.deltaTime;
+                    currentMana = Mathf.Max(currentMana, 0f);
+                }
+
                 healingArea.gameObject.SetActive(true);
                 rightArm.transform.localPosition = Vector3.Lerp(rightArm.transform.localPosition, endPos, Time.deltaTime * speed);
                 rightArm.transform.localRotation = Quaternion.Lerp(rightArm.transform.localRotation, endRot, Time.deltaTime * speed);
             }
             else
             {
+                isUsingMana = false;
                 healingArea.gameObject.SetActive(false);
                 rightArm.transform.localPosition = Vector3.Lerp(rightArm.transform.localPosition, startPos, Time.deltaTime * speed);
                 rightArm.transform.localRotation = Quaternion.Lerp(rightArm.transform.localRotation, startRot, Time.deltaTime * speed);
             }
         }
+    }
 
+    void HandleLeftArm()
+    {
         if (leftArm != null)
         {
             leftArm.SetActive(true);
@@ -219,14 +301,10 @@ public class Player : Health
             Quaternion endRot = Quaternion.Euler(3.543f, -85.937f, 3.077f);
             float speed = 5f;
 
-            if (Input.GetMouseButton(1) && currentMana > 0f)
+            bool castingOrHealing = (Input.GetMouseButton(1) && currentMana > 0f) || isCastingUlt;
+
+            if (castingOrHealing)
             {
-                isUsingMana = true;
-                manaRegenTimer = manaRegenDelay;
-
-                currentMana -= manaCostPerSecond * Time.deltaTime;
-                currentMana = Mathf.Max(currentMana, 0f);
-
                 leftArm.transform.localPosition = Vector3.Lerp(leftArm.transform.localPosition, endPos, Time.deltaTime * speed);
                 leftArm.transform.localRotation = Quaternion.Lerp(leftArm.transform.localRotation, endRot, Time.deltaTime * speed);
 
@@ -251,23 +329,24 @@ public class Player : Health
                     leftArm.transform.localPosition += shakeOffset;
                 }
 
-                healingArea.gameObject.SetActive(true);
+                healingArea.gameObject.SetActive(Input.GetMouseButton(1));
             }
             else
             {
-                isUsingMana = false;
-
+                glowTimer = 0f;
+                glowActivated = false;
                 leftArm.transform.localPosition = Vector3.Lerp(leftArm.transform.localPosition, startPos, Time.deltaTime * speed);
                 leftArm.transform.localRotation = Quaternion.Lerp(leftArm.transform.localRotation, startRot, Time.deltaTime * speed);
                 healingArea.gameObject.SetActive(false);
-                glowTimer = 0f;
-                glowActivated = false;
                 if (glowRenderer != null)
                     glowRenderer.material = originalMaterial;
             }
         }
+    }
 
-        if (!isUsingMana)
+    void HandleManaRegen()
+    {
+        if (!isUsingMana && ultCooldownTimer <= 0f)
         {
             if (manaRegenTimer > 0f)
             {
@@ -280,7 +359,10 @@ public class Player : Health
                 currentMana = Mathf.Min(currentMana, maxMana);
             }
         }
+    }
 
+    void HandleCameraShake()
+    {
         if (shakeTimer > 0)
         {
             Vector3 randomOffset = Random.insideUnitSphere * shakeMagnitude;
@@ -292,7 +374,10 @@ public class Player : Health
         {
             playerCamera.transform.localPosition = Vector3.Lerp(playerCamera.transform.localPosition, cameraOriginalPos, Time.deltaTime * smoothShakeSpeed);
         }
+    }
 
+    void HandleRedOverlay()
+    {
         if (overlayTimer > 0)
         {
             overlayTimer -= Time.deltaTime;
@@ -302,6 +387,55 @@ public class Player : Health
         else
         {
             redOverlay.color = Color.clear;
+        }
+    }
+
+    void HandleUltimate()
+    {
+        if (isCastingUlt)
+        {
+            ultCastTimer -= Time.deltaTime;
+
+            if (ultCastTimer <= 0f && !hasThrownUlt)
+            {
+                if (ultimatePrefab != null && ultimateSpawnPoint != null)
+                {
+                    GameObject ult = Instantiate(ultimatePrefab, ultimateSpawnPoint.position, playerCamera.transform.rotation);
+                    Rigidbody rb = ult.GetComponent<Rigidbody>();
+                    if (rb != null)
+                    {
+                        rb.AddForce(playerCamera.transform.forward * launchForceUlt, ForceMode.Impulse);
+                    }
+                }
+                hasThrownUlt = true;
+            }
+
+            if (hasThrownUlt && ultCastTimer <= -0.5f)
+            {
+                isCastingUlt = false;
+            }
+        }
+    }
+
+    void HandleFootsteps(bool isMoving, bool isRunning)
+    {
+        if (characterController.isGrounded && isMoving)
+        {
+            AudioClip targetClip = isRunning ? runClip : walkClip;
+
+            if (footstepSource.clip != targetClip)
+            {
+                footstepSource.clip = targetClip;
+                footstepSource.Play();
+            }
+            else if (!footstepSource.isPlaying)
+            {
+                footstepSource.Play();
+            }
+        }
+        else
+        {
+            footstepSource.Stop();
         }
     }
 

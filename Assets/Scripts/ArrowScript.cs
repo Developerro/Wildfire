@@ -54,6 +54,11 @@ public class ArrowScript : MonoBehaviour
             {
                 if (!hit.collider.isTrigger)
                 {
+                    if (hit.collider.CompareTag("Player"))
+                    {
+                        return;
+                    }
+
                     transform.position = hit.point;
                     StickArrow(hit.collider, hit.point, transform.rotation);
                 }
@@ -75,7 +80,7 @@ public class ArrowScript : MonoBehaviour
         if (arrowPrefab != null)
         {
             GameObject stuckArrow = Instantiate(arrowPrefab, hitPosition, hitRotation);
-            stuckArrow.transform.SetParent(hitCollider.transform, worldPositionStays: true);
+            stuckArrow.transform.SetParent(hitCollider.transform, true);
 
             Destroy(stuckArrow.GetComponent<ArrowScript>());
             Rigidbody cloneRb = stuckArrow.GetComponent<Rigidbody>();
