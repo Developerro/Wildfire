@@ -15,7 +15,7 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62011
+50307
 -job-worker-count
 9
 -background-job-worker-count
@@ -59,14 +59,14 @@ C:/Users/Foca/Documents/Estudos/Faculdade/Projeto 3D/Wildfire
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [32436]  Target information:
+Player connection [11104]  Target information:
 
-Player connection [32436]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1666086229 [EditorId] 1666086229 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11104]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2404537534 [EditorId] 2404537534 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32436]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 1666086229 [EditorId] 1666086229 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11104]  * "[IP] 192.168.1.18 [Port] 0 [Flags] 2 [Guid] 2404537534 [EditorId] 2404537534 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-DB2IP17) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32436] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [32436] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11104] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [11104] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.88 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.38f1 (82314a941f2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 6000.0.38f1/Editor/Data/Resources/UnitySubsystems
@@ -95,45 +95,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 6000.0.38f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 6000.0.38f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 6000.0.38f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 6000.0.38f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 6000.0.38f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016985 seconds.
-- Loaded All Assemblies, in  0.955 seconds
+Registered in 0.016690 seconds.
+- Loaded All Assemblies, in  0.965 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.747 seconds
-Domain Reload Profiling: 1689ms
-	BeginReloadAssembly (319ms)
+- Finished resetting the current domain, in  0.761 seconds
+Domain Reload Profiling: 1714ms
+	BeginReloadAssembly (324ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (81ms)
-	RebuildNativeTypeToScriptingClass (35ms)
-	initialDomainReloadingComplete (134ms)
+	RebuildCommonClasses (91ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (138ms)
 	LoadAllAssembliesAndSetupDomain (373ms)
-		LoadAssemblies (307ms)
+		LoadAssemblies (313ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (365ms)
+		AnalyzeDomain (366ms)
 			TypeCache.Refresh (363ms)
-				TypeCache.ScanAssembly (335ms)
+				TypeCache.ScanAssembly (336ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (748ms)
+	FinalizeReload (762ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (637ms)
+		SetupLoadedEditorAssemblies (648ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (68ms)
+			InitializePlatformSupportModulesInManaged (70ms)
 			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (321ms)
-			ProcessInitializeOnLoadMethodAttributes (126ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (317ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -142,107 +142,137 @@ Domain Reload Profiling: 1689ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.080 seconds
+- Loaded All Assemblies, in  2.162 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.16 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.693 seconds
-Domain Reload Profiling: 3748ms
-	BeginReloadAssembly (403ms)
+- Finished resetting the current domain, in  1.777 seconds
+Domain Reload Profiling: 3913ms
+	BeginReloadAssembly (410ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (102ms)
-	LoadAllAssembliesAndSetupDomain (1444ms)
-		LoadAssemblies (1020ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (104ms)
+	LoadAllAssembliesAndSetupDomain (1501ms)
+		LoadAssemblies (1052ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (684ms)
-			TypeCache.Refresh (504ms)
-				TypeCache.ScanAssembly (469ms)
-			BuildScriptInfoCaches (145ms)
+		AnalyzeDomain (710ms)
+			TypeCache.Refresh (532ms)
+				TypeCache.ScanAssembly (498ms)
+			BuildScriptInfoCaches (143ms)
 			ResolveRequiredComponents (28ms)
-	FinalizeReload (1694ms)
+	FinalizeReload (1778ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1328ms)
+		SetupLoadedEditorAssemblies (1404ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (292ms)
-			ProcessInitializeOnLoadAttributes (781ms)
-			ProcessInitializeOnLoadMethodAttributes (214ms)
-			AfterProcessingInitializeOnLoad (25ms)
+			BeforeProcessingInitializeOnLoad (325ms)
+			ProcessInitializeOnLoadAttributes (834ms)
+			ProcessInitializeOnLoadMethodAttributes (205ms)
+			AfterProcessingInitializeOnLoad (24ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (22ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 3.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 468 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7737 unused Assets / (23.0 MB). Loaded Objects now: 8397.
-Memory consumption went from 243.6 MB to 220.6 MB.
-Total: 19.114000 ms (FindLiveObjects: 1.262100 ms CreateObjectMapping: 0.985300 ms MarkObjects: 7.980100 ms  DeleteObjects: 8.884700 ms)
+Unloading 7739 unused Assets / (20.0 MB). Loaded Objects now: 8399.
+Memory consumption went from 243.4 MB to 223.4 MB.
+Total: 25.614800 ms (FindLiveObjects: 1.244500 ms CreateObjectMapping: 1.019900 ms MarkObjects: 9.660900 ms  DeleteObjects: 13.686700 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 521238.671664 seconds.
-  path: Assets/Animations/AttackYellow.fbx
-  artifactKey: Guid(b8027aa16085efb469ef11dbe8733cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/AttackYellow.fbx using Guid(b8027aa16085efb469ef11dbe8733cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2288140af3c64035ea0e9446a89a129a') in 9.5856634 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 428
+Received Prepare
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 6.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 163 unused Assets / (3.5 MB). Loaded Objects now: 8399.
+Memory consumption went from 158.7 MB to 155.1 MB.
+Total: 12.691100 ms (FindLiveObjects: 0.795300 ms CreateObjectMapping: 0.494300 ms MarkObjects: 9.647300 ms  DeleteObjects: 1.752100 ms)
 
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Prepare: number of updated asset objects reloaded= 244
+AssetImportParameters requested are different than current active one (requested -> active):
+  buildTarget: platform 20, subtarget 0, extendedPlatform 0 -> platform 19, subtarget 2, extendedPlatform 0
+  graphicsApiMask: 2048 -> 4
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Animations/AttackYellow.fbx
-  artifactKey: Guid(b8027aa16085efb469ef11dbe8733cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/AttackYellow.fbx using Guid(b8027aa16085efb469ef11dbe8733cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2288140af3c64035ea0e9446a89a129a') in 0.1037624 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
+Received Prepare
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 5.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 163 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 163 unused Assets / (3.5 MB). Loaded Objects now: 8399.
+Memory consumption went from 157.1 MB to 153.6 MB.
+Total: 92.994600 ms (FindLiveObjects: 27.596100 ms CreateObjectMapping: 3.164700 ms MarkObjects: 55.824100 ms  DeleteObjects: 6.404000 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Animations/VermelhoRun3.fbx
-  artifactKey: Guid(75331ef7b0b62484bad670f632f301a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/VermelhoRun3.fbx using Guid(75331ef7b0b62484bad670f632f301a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e92a604869d2d7575bed5c0a65c7cd6f') in 0.3082305 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 145
+Received Prepare
+Begin MonoManager ReloadAssembly
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+- Loaded All Assemblies, in  3.038 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.088 seconds
+Domain Reload Profiling: 5107ms
+	BeginReloadAssembly (1282ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (733ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (113ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (41ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (1514ms)
+		LoadAssemblies (1085ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (710ms)
+			TypeCache.Refresh (386ms)
+				TypeCache.ScanAssembly (359ms)
+			BuildScriptInfoCaches (276ms)
+			ResolveRequiredComponents (41ms)
+	FinalizeReload (2089ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1511ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (362ms)
+			ProcessInitializeOnLoadAttributes (939ms)
+			ProcessInitializeOnLoadMethodAttributes (153ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (59ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 177 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7738 unused Assets / (6.9 MB). Loaded Objects now: 8445.
+Memory consumption went from 187.7 MB to 180.9 MB.
+Total: 16.179300 ms (FindLiveObjects: 1.315500 ms CreateObjectMapping: 1.096900 ms MarkObjects: 7.997200 ms  DeleteObjects: 5.766800 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Animations/HitYellow.fbx
-  artifactKey: Guid(bafd79e130aef984ca9364969d8e9c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/HitYellow.fbx using Guid(bafd79e130aef984ca9364969d8e9c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4743bf06dd1e5470b3e55e6c2d61b1b1') in 0.1496607 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Animations/BlueHit.fbx
-  artifactKey: Guid(ce4b5db9e55fa1c46b8631fe2a61e0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/BlueHit.fbx using Guid(ce4b5db9e55fa1c46b8631fe2a61e0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '520eadc28cd8a6fb2ef7edf8833619e1') in 0.1213436 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Animations/ArcoDaoraAnimacao (1).fbx
-  artifactKey: Guid(f49ceda4607e1ce4295174a84eea3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/ArcoDaoraAnimacao (1).fbx using Guid(f49ceda4607e1ce4295174a84eea3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf66def5d161b8e18ad18d50f595d20c') in 0.076879 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 84
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0

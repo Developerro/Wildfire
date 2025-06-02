@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
         health = Mathf.Min(health + amount, maxHealth);
     }
 
+
     public virtual void TakeDamage(float amount)
     {
         if (health >= 0)
@@ -186,6 +187,11 @@ public class Player : Health
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, deathRotation, Time.deltaTime * 2f);
             return;
+        }
+
+        if(health >= maxHealth)
+        {
+            health = maxHealth;
         }
 
         Vector3 forward = transform.TransformDirection(Vector3.forward);
